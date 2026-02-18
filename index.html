@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Tailwind Topics Index</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Tailwind Config -->
+  <script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ["Inter", "ui-sans-serif", "system-ui"],
+          },
+        },
+      },
+    }
+  </script>
+
+  <!-- Inter Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body class="min-h-screen bg-gradient-to-br from-indigo-50 via-sky-50 to-purple-50 dark:from-gray-900 dark:via-gray-900 dark:to-gray-800 text-gray-800 dark:text-gray-100 p-6 md:p-10">
+
+  <div class="max-w-6xl mx-auto">
+
+    <!-- Header -->
+    <header class="text-center mb-14">
+      <h1 class="text-4xl md:text-5xl font-extrabold tracking-tight mb-4">
+        Tailwind CSS
+        <span class="block text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 to-purple-500">
+          Complete Topics
+        </span>
+      </h1>
+      <p class="text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
+        A clean, structured roadmap covering everything you need to master Tailwind CSS.
+      </p>
+    </header>
+
+    <!-- Grid -->
+    <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+
+      <!-- Reusable Button Pattern -->
+      <!-- Layout -->
+      <a href="1.html" class="group relative inline-flex items-center gap-3 rounded-xl px-8 py-3 font-semibold text-white bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 shadow-lg shadow-purple-500/30 transition-all duration-300 hover:shadow-xl hover:shadow-pink-500/40 hover:-translate-y-1 active:translate-y-0 focus:outline-none focus:ring-2 focus:ring-purple-400 focus:ring-offset-2">
+        <span class="flex h-6 w-6 items-center justify-center rounded-full bg-white/20">
+          1.
+        </span> 
+        <span class="relative z-10">Container & Display</span>
+        <span class="absolute inset-0 -z-10 rounded-xl bg-gradient-to-r from-indigo-400 via-purple-400 to-pink-400 opacity-0 blur-xl transition group-hover:opacity-70">
+        </span>
+      </a>
+
+
+      <a href="2.html"
+   class="group relative inline-flex items-center gap-3 overflow-hidden rounded-2xl px-9 py-4 font-semibold text-white
+          bg-[length:200%_200%]
+          bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500
+          shadow-xl shadow-purple-500/30
+          transition-all duration-500 ease-out
+          hover:shadow-2xl hover:shadow-pink-500/50
+          hover:-translate-y-1.5 active:translate-y-0
+          focus:outline-none focus:ring-2 focus:ring-purple-400 focus:ring-offset-2
+          animate-gradient">
+
+  <!-- Glow aura -->
+  <span
+    class="absolute inset-0 -z-10 rounded-2xl bg-gradient-to-r from-indigo-400 via-purple-400 to-pink-400
+           opacity-0 blur-2xl transition duration-500 group-hover:opacity-70">
+  </span>
+
+  <!-- Shine sweep -->
+  <span
+    class="pointer-events-none absolute inset-0 -translate-x-full bg-gradient-to-r
+           from-transparent via-white/20 to-transparent
+           transition-transform duration-1000 group-hover:translate-x-full">
+  </span>
+
+  <!-- Number bubble -->
+  <span
+    class="flex h-7 w-7 items-center justify-center rounded-full bg-white/25 text-sm font-bold
+           transition-transform duration-500 group-hover:rotate-12 group-hover:scale-110">
+    2
+  </span>
+
+  <!-- Text -->
+  <span class="relative z-10 tracking-wide">
+    Flexbox
+  </span>
+</a>
+
+<!-- Custom animation -->
+<style>
+@keyframes gradient {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+.animate-gradient {
+  animation: gradient 6s ease infinite;
+}
+</style>
+
+<!-- 
+      <a href="2.html" class="group relative inline-flex items-center gap-3 rounded-xl px-8 py-3 font-semibold text-white bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 shadow-lg shadow-purple-500/30 transition-all duration-300 hover:shadow-xl hover:shadow-pink-500/40 hover:-translate-y-1 active:translate-y-0 focus:outline-none focus:ring-2 focus:ring-purple-400 focus:ring-offset-2">
+        <span class="flex h-6 w-6 items-center justify-center rounded-full bg-white/20">
+          2.
+        </span> 
+        <span class="relative z-10">Flexbox</span>
+        <span class="absolute inset-0 -z-10 rounded-xl bg-gradient-to-r from-indigo-400 via-purple-400 to-pink-400 opacity-0 blur-xl transition group-hover:opacity-70">
+        </span>
+      </a>
+    -->
+      <a href="3.html" class="group relative inline-flex items-center gap-3 rounded-xl px-8 py-3 font-semibold text-white bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 shadow-lg shadow-purple-500/30 transition-all duration-300 hover:shadow-xl hover:shadow-pink-500/40 hover:-translate-y-1 active:translate-y-0 focus:outline-none focus:ring-2 focus:ring-purple-400 focus:ring-offset-2">
+        <span class="flex h-6 w-6 items-center justify-center rounded-full bg-white/20">
+          3.
+        </span> 
+        <span class="relative z-10"> Grid</span>
+        <span class="absolute inset-0 -z-10 rounded-xl bg-gradient-to-r from-indigo-400 via-purple-400 to-pink-400 opacity-0 blur-xl transition group-hover:opacity-70">
+        </span>
+      </a>
+
+
+
+      
+ 
+      <a href="4.html" class="group relative inline-flex items-center gap-3 rounded-xl px-8 py-3 font-semibold text-white bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 shadow-lg shadow-purple-500/30 transition-all duration-300 hover:shadow-xl hover:shadow-pink-500/40 hover:-translate-y-1 active:translate-y-0 focus:outline-none focus:ring-2 focus:ring-purple-400 focus:ring-offset-2">
+        <span class="flex h-6 w-6 items-center justify-center rounded-full bg-white/20">
+          4.
+        </span> 
+        <span class="relative z-10">Positioning</span>
+        <span class="absolute inset-0 -z-10 rounded-xl bg-gradient-to-r from-indigo-400 via-purple-400 to-pink-400 opacity-0 blur-xl transition group-hover:opacity-70">
+        </span>
+      </a>
+
+      <a href="5.html" class="group relative inline-flex items-center gap-3 rounded-xl px-8 py-3 font-semibold text-white bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 shadow-lg shadow-purple-500/30 transition-all duration-300 hover:shadow-xl hover:shadow-pink-500/40 hover:-translate-y-1 active:translate-y-0 focus:outline-none focus:ring-2 focus:ring-purple-400 focus:ring-offset-2">
+        <span class="flex h-6 w-6 items-center justify-center rounded-full bg-white/20">
+          5.
+        </span> 
+        <span class="relative z-10">Padding</span>
+        <span class="absolute inset-0 -z-10 rounded-xl bg-gradient-to-r from-indigo-400 via-purple-400 to-pink-400 opacity-0 blur-xl transition group-hover:opacity-70">
+        </span>
+      </a>
+
+      <a href="6.html" class="group relative inline-flex items-center gap-3 rounded-xl px-8 py-3 font-semibold text-white bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 shadow-lg shadow-purple-500/30 transition-all duration-300 hover:shadow-xl hover:shadow-pink-500/40 hover:-translate-y-1 active:translate-y-0 focus:outline-none focus:ring-2 focus:ring-purple-400 focus:ring-offset-2">
+        <span class="flex h-6 w-6 items-center justify-center rounded-full bg-white/20">
+          6.
+        </span> 
+        <span class="relative z-10">Margin</span>
+        <span class="absolute inset-0 -z-10 rounded-xl bg-gradient-to-r from-indigo-400 via-purple-400 to-pink-400 opacity-0 blur-xl transition group-hover:opacity-70">
+        </span>
+      </a>
+
+      <a href="7.html" class="group relative inline-flex items-center gap-3 rounded-xl px-8 py-3 font-semibold text-white bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 shadow-lg shadow-purple-500/30 transition-all duration-300 hover:shadow-xl hover:shadow-pink-500/40 hover:-translate-y-1 active:translate-y-0 focus:outline-none focus:ring-2 focus:ring-purple-400 focus:ring-offset-2">
+        <span class="flex h-6 w-6 items-center justify-center rounded-full bg-white/20">
+          7.
+        </span> 
+        <span class="relative z-10">Space Between</span>
+        <span class="absolute inset-0 -z-10 rounded-xl bg-gradient-to-r from-indigo-400 via-purple-400 to-pink-400 opacity-0 blur-xl transition group-hover:opacity-70">
+        </span>
+      </a>
+
+      <a href="8.html" class="group relative inline-flex items-center gap-3 rounded-xl px-8 py-3 font-semibold text-white bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 shadow-lg shadow-purple-500/30 transition-all duration-300 hover:shadow-xl hover:shadow-pink-500/40 hover:-translate-y-1 active:translate-y-0 focus:outline-none focus:ring-2 focus:ring-purple-400 focus:ring-offset-2">
+        <span class="flex h-6 w-6 items-center justify-center rounded-full bg-white/20">
+          8.
+        </span> 
+        <span class="relative z-10">Width</span>
+        <span class="absolute inset-0 -z-10 rounded-xl bg-gradient-to-r from-indigo-400 via-purple-400 to-pink-400 opacity-0 blur-xl transition group-hover:opacity-70">
+        </span>
+      </a>
+
+      <a href="9.html" class="group relative inline-flex items-center gap-3 rounded-xl px-8 py-3 font-semibold text-white bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 shadow-lg shadow-purple-500/30 transition-all duration-300 hover:shadow-xl hover:shadow-pink-500/40 hover:-translate-y-1 active:translate-y-0 focus:outline-none focus:ring-2 focus:ring-purple-400 focus:ring-offset-2">
+        <span class="flex h-6 w-6 items-center justify-center rounded-full bg-white/20">
+          9.
+        </span> 
+        <span class="relative z-10">Height</span>
+        <span class="absolute inset-0 -z-10 rounded-xl bg-gradient-to-r from-indigo-400 via-purple-400 to-pink-400 opacity-0 blur-xl transition group-hover:opacity-70">
+        </span>
+      </a>
+
+      <a href="10.html" class="group relative inline-flex items-center gap-3 rounded-xl px-8 py-3 font-semibold text-white bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 shadow-lg shadow-purple-500/30 transition-all duration-300 hover:shadow-xl hover:shadow-pink-500/40 hover:-translate-y-1 active:translate-y-0 focus:outline-none focus:ring-2 focus:ring-purple-400 focus:ring-offset-2">
+        <span class="flex h-6 w-6 items-center justify-center rounded-full bg-white/20">
+          10.
+        </span> 
+        <span class="relative z-10">Size & Aspect Ratio</span>
+        <span class="absolute inset-0 -z-10 rounded-xl bg-gradient-to-r from-indigo-400 via-purple-400 to-pink-400 opacity-0 blur-xl transition group-hover:opacity-70">
+        </span>
+      </a>
+
+      <a href="11.html" class="group relative inline-flex items-center gap-3 rounded-xl px-8 py-3 font-semibold text-white bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 shadow-lg shadow-purple-500/30 transition-all duration-300 hover:shadow-xl hover:shadow-pink-500/40 hover:-translate-y-1 active:translate-y-0 focus:outline-none focus:ring-2 focus:ring-purple-400 focus:ring-offset-2">
+        <span class="flex h-6 w-6 items-center justify-center rounded-full bg-white/20">
+          11.
+        </span> 
+        <span class="relative z-10">Font Size & Line Height</span>
+        <span class="absolute inset-0 -z-10 rounded-xl bg-gradient-to-r from-indigo-400 via-purple-400 to-pink-400 opacity-0 blur-xl transition group-hover:opacity-70">
+        </span>
+      </a>
+
+      <a href="12.html" class="group relative inline-flex items-center gap-3 rounded-xl px-8 py-3 font-semibold text-white bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 shadow-lg shadow-purple-500/30 transition-all duration-300 hover:shadow-xl hover:shadow-pink-500/40 hover:-translate-y-1 active:translate-y-0 focus:outline-none focus:ring-2 focus:ring-purple-400 focus:ring-offset-2">
+        <span class="flex h-6 w-6 items-center justify-center rounded-full bg-white/20">
+          12.
+        </span> 
+        <span class="relative z-10">Font Weight & Style</span>
+        <span class="absolute inset-0 -z-10 rounded-xl bg-gradient-to-r from-indigo-400 via-purple-400 to-pink-400 opacity-0 blur-xl transition group-hover:opacity-70">
+        </span>
+      </a>
+
+      <a href="13.html" class="group relative inline-flex items-center gap-3 rounded-xl px-8 py-3 font-semibold text-white bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 shadow-lg shadow-purple-500/30 transition-all duration-300 hover:shadow-xl hover:shadow-pink-500/40 hover:-translate-y-1 active:translate-y-0 focus:outline-none focus:ring-2 focus:ring-purple-400 focus:ring-offset-2">
+        <span class="flex h-6 w-6 items-center justify-center rounded-full bg-white/20">
+          13.
+        </span> 
+        <span class="relative z-10">Text Color & Decoration</span>
+        <span class="absolute inset-0 -z-10 rounded-xl bg-gradient-to-r from-indigo-400 via-purple-400 to-pink-400 opacity-0 blur-xl transition group-hover:opacity-70">
+        </span>
+      </a>
+
+      <a href="14.html" class="group relative inline-flex items-center gap-3 rounded-xl px-8 py-3 font-semibold text-white bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 shadow-lg shadow-purple-500/30 transition-all duration-300 hover:shadow-xl hover:shadow-pink-500/40 hover:-translate-y-1 active:translate-y-0 focus:outline-none focus:ring-2 focus:ring-purple-400 focus:ring-offset-2">
+        <span class="flex h-6 w-6 items-center justify-center rounded-full bg-white/20">
+          14.
+        </span> 
+        <span class="relative z-10">Text Alignment & Wrapping</span>
+        <span class="absolute inset-0 -z-10 rounded-xl bg-gradient-to-r from-indigo-400 via-purple-400 to-pink-400 opacity-0 blur-xl transition group-hover:opacity-70">
+        </span>
+      </a>
+
+      <a href="15.html" class="group relative inline-flex items-center gap-3 rounded-xl px-8 py-3 font-semibold text-white bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 shadow-lg shadow-purple-500/30 transition-all duration-300 hover:shadow-xl hover:shadow-pink-500/40 hover:-translate-y-1 active:translate-y-0 focus:outline-none focus:ring-2 focus:ring-purple-400 focus:ring-offset-2">
+        <span class="flex h-6 w-6 items-center justify-center rounded-full bg-white/20">
+          15.
+        </span> 
+        <span class="relative z-10">Background Color</span>
+        <span class="absolute inset-0 -z-10 rounded-xl bg-gradient-to-r from-indigo-400 via-purple-400 to-pink-400 opacity-0 blur-xl transition group-hover:opacity-70">
+        </span>
+      </a>
+
+      <a href="16.html" class="group relative inline-flex items-center gap-3 rounded-xl px-8 py-3 font-semibold text-white bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 shadow-lg shadow-purple-500/30 transition-all duration-300 hover:shadow-xl hover:shadow-pink-500/40 hover:-translate-y-1 active:translate-y-0 focus:outline-none focus:ring-2 focus:ring-purple-400 focus:ring-offset-2">
+        <span class="flex h-6 w-6 items-center justify-center rounded-full bg-white/20">
+          16.
+        </span> 
+        <span class="relative z-10">Background Gradients</span>
+        <span class="absolute inset-0 -z-10 rounded-xl bg-gradient-to-r from-indigo-400 via-purple-400 to-pink-400 opacity-0 blur-xl transition group-hover:opacity-70">
+        </span>
+      </a>
+
+      <a href="17.html" class="group relative inline-flex items-center gap-3 rounded-xl px-8 py-3 font-semibold text-white bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 shadow-lg shadow-purple-500/30 transition-all duration-300 hover:shadow-xl hover:shadow-pink-500/40 hover:-translate-y-1 active:translate-y-0 focus:outline-none focus:ring-2 focus:ring-purple-400 focus:ring-offset-2">
+        <span class="flex h-6 w-6 items-center justify-center rounded-full bg-white/20">
+          17.
+        </span> 
+        <span class="relative z-10">Background Images</span>
+        <span class="absolute inset-0 -z-10 rounded-xl bg-gradient-to-r from-indigo-400 via-purple-400 to-pink-400 opacity-0 blur-xl transition group-hover:opacity-70">
+        </span>
+      </a>
+
+      <a href="18.html" class="group relative inline-flex items-center gap-3 rounded-xl px-8 py-3 font-semibold text-white bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 shadow-lg shadow-purple-500/30 transition-all duration-300 hover:shadow-xl hover:shadow-pink-500/40 hover:-translate-y-1 active:translate-y-0 focus:outline-none focus:ring-2 focus:ring-purple-400 focus:ring-offset-2">
+        <span class="flex h-6 w-6 items-center justify-center rounded-full bg-white/20">
+          18.
+        </span> 
+        <span class="relative z-10">Border Width & Style</span>
+        <span class="absolute inset-0 -z-10 rounded-xl bg-gradient-to-r from-indigo-400 via-purple-400 to-pink-400 opacity-0 blur-xl transition group-hover:opacity-70">
+        </span>
+      </a>
+
+      <a href="19.html" class="group relative inline-flex items-center gap-3 rounded-xl px-8 py-3 font-semibold text-white bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 shadow-lg shadow-purple-500/30 transition-all duration-300 hover:shadow-xl hover:shadow-pink-500/40 hover:-translate-y-1 active:translate-y-0 focus:outline-none focus:ring-2 focus:ring-purple-400 focus:ring-offset-2">
+        <span class="flex h-6 w-6 items-center justify-center rounded-full bg-white/20">
+          19.
+        </span> 
+        <span class="relative z-10">Border Color</span>
+        <span class="absolute inset-0 -z-10 rounded-xl bg-gradient-to-r from-indigo-400 via-purple-400 to-pink-400 opacity-0 blur-xl transition group-hover:opacity-70">
+        </span>
+      </a>
+
+
+      <a href="20.html" class="group relative inline-flex items-center gap-3 rounded-xl px-8 py-3 font-semibold text-white bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 shadow-lg shadow-purple-500/30 transition-all duration-300 hover:shadow-xl hover:shadow-pink-500/40 hover:-translate-y-1 active:translate-y-0 focus:outline-none focus:ring-2 focus:ring-purple-400 focus:ring-offset-2">
+        <span class="flex h-6 w-6 items-center justify-center rounded-full bg-white/20">
+          20.
+        </span> 
+        <span class="relative z-10">Border Radius</span>
+        <span class="absolute inset-0 -z-10 rounded-xl bg-gradient-to-r from-indigo-400 via-purple-400 to-pink-400 opacity-0 blur-xl transition group-hover:opacity-70">
+        </span>
+      </a>
+
+      
+
+      <a href="21.html" class="group relative inline-flex items-center gap-3 rounded-xl px-8 py-3 font-semibold text-white bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 shadow-lg shadow-purple-500/30 transition-all duration-300 hover:shadow-xl hover:shadow-pink-500/40 hover:-translate-y-1 active:translate-y-0 focus:outline-none focus:ring-2 focus:ring-purple-400 focus:ring-offset-2">
+        <span class="flex h-6 w-6 items-center justify-center rounded-full bg-white/20">
+          21.
+        </span> 
+        <span class="relative z-10">Outline & Rings</span>
+        <span class="absolute inset-0 -z-10 rounded-xl bg-gradient-to-r from-indigo-400 via-purple-400 to-pink-400 opacity-0 blur-xl transition group-hover:opacity-70">
+        </span>
+      </a>
+      
+
+      <a href="22.html" class="group relative inline-flex items-center gap-3 rounded-xl px-8 py-3 font-semibold text-white bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 shadow-lg shadow-purple-500/30 transition-all duration-300 hover:shadow-xl hover:shadow-pink-500/40 hover:-translate-y-1 active:translate-y-0 focus:outline-none focus:ring-2 focus:ring-purple-400 focus:ring-offset-2">
+        <span class="flex h-6 w-6 items-center justify-center rounded-full bg-white/20">
+          22.
+        </span> 
+        <span class="relative z-10">Box Shadows</span>
+        <span class="absolute inset-0 -z-10 rounded-xl bg-gradient-to-r from-indigo-400 via-purple-400 to-pink-400 opacity-0 blur-xl transition group-hover:opacity-70">
+        </span>
+      </a>
+      
+
+      <a href="23.html" class="group relative inline-flex items-center gap-3 rounded-xl px-8 py-3 font-semibold text-white bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 shadow-lg shadow-purple-500/30 transition-all duration-300 hover:shadow-xl hover:shadow-pink-500/40 hover:-translate-y-1 active:translate-y-0 focus:outline-none focus:ring-2 focus:ring-purple-400 focus:ring-offset-2">
+        <span class="flex h-6 w-6 items-center justify-center rounded-full bg-white/20">
+          23.
+        </span> 
+        <span class="relative z-10">Opacity & Blend Modes</span>
+        <span class="absolute inset-0 -z-10 rounded-xl bg-gradient-to-r from-indigo-400 via-purple-400 to-pink-400 opacity-0 blur-xl transition group-hover:opacity-70">
+        </span>
+      </a>
+
+      
+
+      <a href="24.html" class="group relative inline-flex items-center gap-3 rounded-xl px-8 py-3 font-semibold text-white bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 shadow-lg shadow-purple-500/30 transition-all duration-300 hover:shadow-xl hover:shadow-pink-500/40 hover:-translate-y-1 active:translate-y-0 focus:outline-none focus:ring-2 focus:ring-purple-400 focus:ring-offset-2">
+        <span class="flex h-6 w-6 items-center justify-center rounded-full bg-white/20">
+          24.
+        </span> 
+        <span class="relative z-10">Opacity & Blend Modes</span>
+        <span class="absolute inset-0 -z-10 rounded-xl bg-gradient-to-r from-indigo-400 via-purple-400 to-pink-400 opacity-0 blur-xl transition group-hover:opacity-70">
+        </span>
+      </a>
+
+      
+
+      <a href="25.html" class="group relative inline-flex items-center gap-3 rounded-xl px-8 py-3 font-semibold text-white bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 shadow-lg shadow-purple-500/30 transition-all duration-300 hover:shadow-xl hover:shadow-pink-500/40 hover:-translate-y-1 active:translate-y-0 focus:outline-none focus:ring-2 focus:ring-purple-400 focus:ring-offset-2">
+        <span class="flex h-6 w-6 items-center justify-center rounded-full bg-white/20">
+          25.
+        </span> 
+        <span class="relative z-10">Transitions</span>
+        <span class="absolute inset-0 -z-10 rounded-xl bg-gradient-to-r from-indigo-400 via-purple-400 to-pink-400 opacity-0 blur-xl transition group-hover:opacity-70">
+        </span>
+      </a>
+
+      
+
+      <a href="26.html" class="group relative inline-flex items-center gap-3 rounded-xl px-8 py-3 font-semibold text-white bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 shadow-lg shadow-purple-500/30 transition-all duration-300 hover:shadow-xl hover:shadow-pink-500/40 hover:-translate-y-1 active:translate-y-0 focus:outline-none focus:ring-2 focus:ring-purple-400 focus:ring-offset-2">
+        <span class="flex h-6 w-6 items-center justify-center rounded-full bg-white/20">
+          26.
+        </span> 
+        <span class="relative z-10">Animations</span>
+        <span class="absolute inset-0 -z-10 rounded-xl bg-gradient-to-r from-indigo-400 via-purple-400 to-pink-400 opacity-0 blur-xl transition group-hover:opacity-70">
+        </span>
+      </a>
+
+      
+
+      <a href="27.html" class="group relative inline-flex items-center gap-3 rounded-xl px-8 py-3 font-semibold text-white bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 shadow-lg shadow-purple-500/30 transition-all duration-300 hover:shadow-xl hover:shadow-pink-500/40 hover:-translate-y-1 active:translate-y-0 focus:outline-none focus:ring-2 focus:ring-purple-400 focus:ring-offset-2">
+        <span class="flex h-6 w-6 items-center justify-center rounded-full bg-white/20">
+          27.
+        </span> 
+        <span class="relative z-10">Transform</span>
+        <span class="absolute inset-0 -z-10 rounded-xl bg-gradient-to-r from-indigo-400 via-purple-400 to-pink-400 opacity-0 blur-xl transition group-hover:opacity-70">
+        </span>
+      </a>
+
+      
+
+      <a href="28.html" class="group relative inline-flex items-center gap-3 rounded-xl px-8 py-3 font-semibold text-white bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 shadow-lg shadow-purple-500/30 transition-all duration-300 hover:shadow-xl hover:shadow-pink-500/40 hover:-translate-y-1 active:translate-y-0 focus:outline-none focus:ring-2 focus:ring-purple-400 focus:ring-offset-2">
+        <span class="flex h-6 w-6 items-center justify-center rounded-full bg-white/20">
+          28.
+        </span> 
+        <span class="relative z-10">Cursor & Pointer Events</span>
+        <span class="absolute inset-0 -z-10 rounded-xl bg-gradient-to-r from-indigo-400 via-purple-400 to-pink-400 opacity-0 blur-xl transition group-hover:opacity-70">
+        </span>
+      </a>
+
+      
+
+      <a href="29.html" class="group relative inline-flex items-center gap-3 rounded-xl px-8 py-3 font-semibold text-white bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 shadow-lg shadow-purple-500/30 transition-all duration-300 hover:shadow-xl hover:shadow-pink-500/40 hover:-translate-y-1 active:translate-y-0 focus:outline-none focus:ring-2 focus:ring-purple-400 focus:ring-offset-2">
+        <span class="flex h-6 w-6 items-center justify-center rounded-full bg-white/20">
+          29.
+        </span> 
+        <span class="relative z-10">User Select & Resize</span>
+        <span class="absolute inset-0 -z-10 rounded-xl bg-gradient-to-r from-indigo-400 via-purple-400 to-pink-400 opacity-0 blur-xl transition group-hover:opacity-70">
+        </span>
+      </a>
+
+      
+
+      <a href="30.html" class="group relative inline-flex items-center gap-3 rounded-xl px-8 py-3 font-semibold text-white bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 shadow-lg shadow-purple-500/30 transition-all duration-300 hover:shadow-xl hover:shadow-pink-500/40 hover:-translate-y-1 active:translate-y-0 focus:outline-none focus:ring-2 focus:ring-purple-400 focus:ring-offset-2">
+        <span class="flex h-6 w-6 items-center justify-center rounded-full bg-white/20">
+          30.
+        </span> 
+        <span class="relative z-10">Overflow & Scrollbar</span>
+        <span class="absolute inset-0 -z-10 rounded-xl bg-gradient-to-r from-indigo-400 via-purple-400 to-pink-400 opacity-0 blur-xl transition group-hover:opacity-70">
+        </span>
+      </a>
+
+            
+
+      <a href="31.html" class="group relative inline-flex items-center gap-3 rounded-xl px-8 py-3 font-semibold text-white bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 shadow-lg shadow-purple-500/30 transition-all duration-300 hover:shadow-xl hover:shadow-pink-500/40 hover:-translate-y-1 active:translate-y-0 focus:outline-none focus:ring-2 focus:ring-purple-400 focus:ring-offset-2">
+        <span class="flex h-6 w-6 items-center justify-center rounded-full bg-white/20">
+          31.
+        </span> 
+        <span class="relative z-10">Breakpoints</span>
+        <span class="absolute inset-0 -z-10 rounded-xl bg-gradient-to-r from-indigo-400 via-purple-400 to-pink-400 opacity-0 blur-xl transition group-hover:opacity-70">
+        </span>
+      </a>
+            
+
+      <a href="32.html" class="group relative inline-flex items-center gap-3 rounded-xl px-8 py-3 font-semibold text-white bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 shadow-lg shadow-purple-500/30 transition-all duration-300 hover:shadow-xl hover:shadow-pink-500/40 hover:-translate-y-1 active:translate-y-0 focus:outline-none focus:ring-2 focus:ring-purple-400 focus:ring-offset-2">
+        <span class="flex h-6 w-6 items-center justify-center rounded-full bg-white/20">
+          32.
+        </span> 
+        <span class="relative z-10">Responsive Patterns</span>
+        <span class="absolute inset-0 -z-10 rounded-xl bg-gradient-to-r from-indigo-400 via-purple-400 to-pink-400 opacity-0 blur-xl transition group-hover:opacity-70">
+        </span>
+      </a>
+
+            
+
+      <a href="33.html" class="group relative inline-flex items-center gap-3 rounded-xl px-8 py-3 font-semibold text-white bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 shadow-lg shadow-purple-500/30 transition-all duration-300 hover:shadow-xl hover:shadow-pink-500/40 hover:-translate-y-1 active:translate-y-0 focus:outline-none focus:ring-2 focus:ring-purple-400 focus:ring-offset-2">
+        <span class="flex h-6 w-6 items-center justify-center rounded-full bg-white/20">
+          33.
+        </span> 
+        <span class="relative z-10">Screen Readers</span>
+        <span class="absolute inset-0 -z-10 rounded-xl bg-gradient-to-r from-indigo-400 via-purple-400 to-pink-400 opacity-0 blur-xl transition group-hover:opacity-70">
+        </span>
+      </a>
+
+            
+
+      <a href="34.html" class="group relative inline-flex items-center gap-3 rounded-xl px-8 py-3 font-semibold text-white bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 shadow-lg shadow-purple-500/30 transition-all duration-300 hover:shadow-xl hover:shadow-pink-500/40 hover:-translate-y-1 active:translate-y-0 focus:outline-none focus:ring-2 focus:ring-purple-400 focus:ring-offset-2">
+        <span class="flex h-6 w-6 items-center justify-center rounded-full bg-white/20">
+          34.
+        </span> 
+        <span class="relative z-10">Content & Pseudo-elements</span>
+        <span class="absolute inset-0 -z-10 rounded-xl bg-gradient-to-r from-indigo-400 via-purple-400 to-pink-400 opacity-0 blur-xl transition group-hover:opacity-70">
+        </span>
+      </a>
+
+            
+
+      <a href="35.html" class="group relative inline-flex items-center gap-3 rounded-xl px-8 py-3 font-semibold text-white bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 shadow-lg shadow-purple-500/30 transition-all duration-300 hover:shadow-xl hover:shadow-pink-500/40 hover:-translate-y-1 active:translate-y-0 focus:outline-none focus:ring-2 focus:ring-purple-400 focus:ring-offset-2">
+        <span class="flex h-6 w-6 items-center justify-center rounded-full bg-white/20">
+          35.
+        </span> 
+        <span class="relative z-10">Arbitrary Values</span>
+        <span class="absolute inset-0 -z-10 rounded-xl bg-gradient-to-r from-indigo-400 via-purple-400 to-pink-400 opacity-0 blur-xl transition group-hover:opacity-70">
+        </span>
+      </a>
+
+            
+
+      <a href="36.html" class="group relative inline-flex items-center gap-3 rounded-xl px-8 py-3 font-semibold text-white bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 shadow-lg shadow-purple-500/30 transition-all duration-300 hover:shadow-xl hover:shadow-pink-500/40 hover:-translate-y-1 active:translate-y-0 focus:outline-none focus:ring-2 focus:ring-purple-400 focus:ring-offset-2">
+        <span class="flex h-6 w-6 items-center justify-center rounded-full bg-white/20">
+          36.
+        </span> 
+        <span class="relative z-10">Important Modifier</span>
+        <span class="absolute inset-0 -z-10 rounded-xl bg-gradient-to-r from-indigo-400 via-purple-400 to-pink-400 opacity-0 blur-xl transition group-hover:opacity-70">
+        </span>
+      </a>
+      <!--
+      <a href="1.html" class="block">
+        <button class="menu-btn"><span>1. Container & Display</span></button>
+      </a>
+      <a href="2.html" class="block">
+        <button class="menu-btn"><span>2. Flexbox</span></button>
+      </a>
+      <a href="3.html" class="block">
+        <button class="menu-btn"><span>3. Grid</span></button>
+      </a>
+      <a href="4.html" class="block">
+        <button class="menu-btn"><span>4. Positioning</span></button>
+      </a>
+
+       Spacing 
+      <a href="5.html" class="block">
+        <button class="menu-btn"><span>5. Padding</span></button>
+      </a>
+      <a href="6.html" class="block">
+        <button class="menu-btn"><span>6. Margin</span></button>
+      </a>
+      <a href="7.html" class="block">
+        <button class="menu-btn"><span>7. Space Between</span></button>
+      </a>
+
+     Sizing 
+      <a href="8.html" class="block">
+        <button class="menu-btn"><span>8. Width</span></button>
+      </a>
+      <a href="9.html" class="block">
+        <button class="menu-btn"><span>9. Height</span></button>
+      </a>
+      <a href="10.html" class="block">
+        <button class="menu-btn"><span>10. Size & Aspect Ratio</span></button>
+      </a>
+
+   Typography
+      <a href="11.html" class="block">
+        <button class="menu-btn"><span>11. Font Size & Line Height</span></button>
+      </a>
+      <a href="12.html" class="block">
+        <button class="menu-btn"><span>12. Font Weight & Style</span></button>
+      </a>
+      <a href="13.html" class="block">
+        <button class="menu-btn"><span>13. Text Color & Decoration</span></button>
+      </a>
+      <a href="14.html" class="block">
+        <button class="menu-btn"><span>14. Text Alignment & Wrapping</span></button>
+      </a>
+
+       Backgrounds
+      <a href="15.html" class="block">
+        <button class="menu-btn"><span>15. Background Color</span></button>
+      </a>
+      <a href="16.html" class="block">
+        <button class="menu-btn"><span>16. Background Gradients</span></button>
+      </a>
+      <a href="17.html" class="block">
+        <button class="menu-btn"><span>17. Background Images</span></button>
+      </a>
+
+      Borders 
+      <a href="18.html" class="block">
+        <button class="menu-btn"><span>18. Border Width & Style</span></button>
+      </a>
+      <a href="19.html" class="block">
+        <button class="menu-btn"><span>19. Border Color</span></button>
+      </a>
+      <a href="20.html" class="block">
+        <button class="menu-btn"><span>20. Border Radius</span></button>
+      </a>
+      <a href="21.html" class="block">
+        <button class="menu-btn"><span>21. Outline & Rings</span></button>
+      </a>
+
+       Effects 
+      <a href="22.html" class="block">
+        <button class="menu-btn"><span>22. Box Shadows</span></button>
+      </a>
+      <a href="23.html" class="block">
+        <button class="menu-btn"><span>23. Opacity & Blend Modes</span></button>
+      </a>
+      <a href="24.html" class="block">
+        <button class="menu-btn"><span>24. Filters</span></button>
+      </a>
+
+       Motion 
+      <a href="25.html" class="block">
+        <button class="menu-btn"><span>25. Transitions</span></button>
+      </a>
+      <a href="26.html" class="block">
+        <button class="menu-btn"><span>26. Animations</span></button>
+      </a>
+      <a href="27.html" class="block">
+        <button class="menu-btn"><span>27. Transform</span></button>
+      </a>
+
+       Interactivity 
+      <a href="28.html" class="block">
+        <button class="menu-btn"><span>28. Cursor & Pointer Events</span></button>
+      </a>
+      <a href="29.html" class="block">
+        <button class="menu-btn"><span>29. User Select & Resize</span></button>
+      </a>
+      <a href="30.html" class="block">
+        <button class="menu-btn"><span>30. Overflow & Scrollbar</span></button>
+      </a>
+
+       Responsive 
+      <a href="31.html" class="block">
+        <button class="menu-btn"><span>31. Breakpoints</span></button>
+      </a>
+      <a href="32.html" class="block">
+        <button class="menu-btn"><span>32. Responsive Patterns</span></button>
+      </a>
+
+       Utilities 
+      <a href="33.html" class="block">
+        <button class="menu-btn"><span>33. Screen Readers</span></button>
+      </a>
+      <a href="34.html" class="block">
+        <button class="menu-btn"><span>34. Content & Pseudo-elements</span></button>
+      </a>
+      <a href="35.html" class="block">
+        <button class="menu-btn"><span>35. Arbitrary Values</span></button>
+      </a>
+      <a href="36.html" class="block">
+        <button class="menu-btn"><span>36. Important Modifier</span></button>
+      </a>
+<a
+  href="#"
+  class="group relative inline-flex items-center gap-3
+         rounded-xl px-8 py-3
+         font-semibold text-white
+         bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500
+         shadow-lg shadow-purple-500/30
+         transition-all duration-300
+         hover:shadow-xl hover:shadow-pink-500/40
+         hover:-translate-y-1
+         active:translate-y-0
+         focus:outline-none focus:ring-2 focus:ring-purple-400 focus:ring-offset-2"
+>
+ Icon -->
+  <span class="flex h-6 w-6 items-center justify-center rounded-full bg-white/20">
+    ✔
+  </span>
+
+  <!-- Text -->
+  <span class="relative z-10">
+    Gradient Button
+  </span>
+
+  <!-- Glow on hover -->
+  <span
+    class="absolute inset-0 -z-10 rounded-xl
+           bg-gradient-to-r from-indigo-400 via-purple-400 to-pink-400
+           opacity-0 blur-xl transition
+           group-hover:opacity-70">
+  </span>
+</a>
+
+    </div>
+
+    <!-- Footer -->
+    <footer class="text-center mt-16 text-sm text-gray-500 dark:text-gray-400">
+      Built with ❤️ using Tailwind CSS
+    </footer>
+
+  </div>
+
+  <!-- Button Style -->
+  <style>
+    .menu-btn {
+      @apply peer w-full text-left px-4 pr-2 py-2 border rounded
+             bg-white text-gray-700 border-gray-300 shadow-sm
+             hover:bg-gray-50 focus:outline-none;
+    }
+  </style>
+
+</body>
+</html>
