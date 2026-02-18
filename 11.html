@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Advanced Tailwind Typography</title>
+<script src="https://cdn.tailwindcss.com"></script>
+
+<script>
+tailwind.config = {
+  darkMode: 'class'
+}
+</script>
+</head>
+
+<body class="bg-gray-100 dark:bg-gray-900 text-gray-800 dark:text-gray-200 p-6 md:p-12 space-y-12">
+
+<!-- Header -->
+<header class="text-center space-y-4">
+  <h1 class="text-4xl md:text-6xl font-extrabold bg-gradient-to-r from-blue-500 to-purple-600 text-transparent bg-clip-text">
+    Tailwind Typography Showcase
+  </h1>
+  <p class="text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
+    A complete advanced typography playground using Tailwind CSS utilities.
+  </p>
+
+  <button onclick="document.documentElement.classList.toggle('dark')" 
+    class="px-6 py-2 bg-black text-white rounded-lg shadow hover:scale-105 transition">
+    Toggle Dark Mode
+  </button>
+</header>
+
+<!-- Font Size -->
+<section class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow space-y-4">
+<h2 class="text-2xl font-bold border-b pb-2">Font Size Scale</h2>
+
+<div class="space-y-2">
+<p class="text-xs">text-xs</p>
+<p class="text-sm">text-sm</p>
+<p class="text-base">text-base</p>
+<p class="text-lg">text-lg</p>
+<p class="text-xl">text-xl</p>
+<p class="text-2xl">text-2xl</p>
+<p class="text-3xl">text-3xl</p>
+<p class="text-4xl">text-4xl</p>
+</div>
+</section>
+
+<!-- Font Weight -->
+<section class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow space-y-3">
+<h2 class="text-2xl font-bold border-b pb-2">Font Weights</h2>
+
+<p class="font-thin">Thin</p>
+<p class="font-light">Light</p>
+<p class="font-normal">Normal</p>
+<p class="font-medium">Medium</p>
+<p class="font-semibold">Semibold</p>
+<p class="font-bold">Bold</p>
+<p class="font-extrabold">Extra Bold</p>
+</section>
+
+<!-- Letter Spacing -->
+<section class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow space-y-3">
+<h2 class="text-2xl font-bold border-b pb-2">Letter Spacing</h2>
+
+<p class="tracking-tighter">Tighter spacing</p>
+<p class="tracking-tight">Tight spacing</p>
+<p class="tracking-normal">Normal spacing</p>
+<p class="tracking-wide">Wide spacing</p>
+<p class="tracking-wider">Wider spacing</p>
+<p class="tracking-widest">Widest spacing</p>
+</section>
+
+<!-- Line Height -->
+<section class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow space-y-3">
+<h2 class="text-2xl font-bold border-b pb-2">Line Height</h2>
+
+<p class="leading-tight">
+Tight line height improves heading density and visual grouping.
+</p>
+
+<p class="leading-relaxed">
+Relaxed line height is ideal for long paragraphs and readability in articles.
+</p>
+
+<p class="leading-loose">
+Loose line height gives airy and premium reading experience.
+</p>
+</section>
+
+<!-- Colors -->
+<section class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow space-y-4">
+<h2 class="text-2xl font-bold border-b pb-2">Text Colors</h2>
+
+<p class="text-red-500">Red Text</p>
+<p class="text-blue-500">Blue Text</p>
+<p class="text-green-500">Green Text</p>
+<p class="text-yellow-500">Yellow Text</p>
+
+<p class="bg-gradient-to-r from-pink-500 to-purple-600 text-transparent bg-clip-text text-2xl font-bold">
+Gradient Text Effect
+</p>
+</section>
+
+<!-- Responsive -->
+<section class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow space-y-4 text-center">
+<h2 class="text-2xl font-bold border-b pb-2">Responsive Typography</h2>
+
+<h1 class="text-2xl sm:text-3xl md:text-5xl lg:text-7xl font-extrabold">
+Resize Your Screen
+</h1>
+
+<p class="text-gray-500">Font scales across breakpoints</p>
+</section>
+
+<!-- Card Example -->
+<section class="grid md:grid-cols-3 gap-6">
+<div class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow hover:shadow-xl transition">
+<h3 class="text-xl font-bold mb-2">Modern UI</h3>
+<p class="text-gray-600 dark:text-gray-400 leading-relaxed">
+Clean typography creates better user experience and readability.
+</p>
+<button class="mt-4 px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600">
+Learn More
+</button>
+</div>
+
+<div class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow hover:shadow-xl transition">
+<h3 class="text-xl font-bold mb-2">Performance</h3>
+<p class="text-gray-600 dark:text-gray-400">
+Utility-first CSS speeds up development workflow.
+</p>
+<button class="mt-4 px-4 py-2 bg-purple-500 text-white rounded hover:bg-purple-600">
+Explore
+</button>
+</div>
+
+<div class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow hover:shadow-xl transition">
+<h3 class="text-xl font-bold mb-2">Customization</h3>
+<p class="text-gray-600 dark:text-gray-400">
+Tailwind allows deep customization with config files.
+</p>
+<button class="mt-4 px-4 py-2 bg-green-500 text-white rounded hover:bg-green-600">
+Get Started
+</button>
+</div>
+</section>
+
+<!-- Footer -->
+<footer class="text-center text-gray-500 pt-10">
+<p>Built with Tailwind CSS • Advanced Typography Demo</p>
+</footer>
+
+</body>
+</html>

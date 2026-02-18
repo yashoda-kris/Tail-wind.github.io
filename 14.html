@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Advanced Tailwind Text Layout Utilities</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+
+<body class="bg-gray-100 p-6 md:p-12 space-y-12">
+
+<!-- HEADER -->
+<header class="text-center space-y-3">
+  <h1 class="text-4xl md:text-5xl font-extrabold text-blue-600">
+    Tailwind Text Layout Utilities
+  </h1>
+  <p class="text-gray-600">Alignment • Whitespace • Wrapping • Hyphenation</p>
+</header>
+
+<!-- TEXT ALIGNMENT -->
+<section class="bg-white p-6 rounded-xl shadow space-y-4">
+<h2 class="text-2xl font-bold border-b pb-2">Text Alignment</h2>
+
+<div class="grid md:grid-cols-2 gap-4">
+
+<p class="text-left bg-gray-100 p-4 rounded">
+<b>text-left</b><br>
+Left aligned text looks natural for most languages.
+</p>
+
+<p class="text-center bg-gray-100 p-4 rounded">
+<b>text-center</b><br>
+Center alignment is common for headings.
+</p>
+
+<p class="text-right bg-gray-100 p-4 rounded">
+<b>text-right</b><br>
+Right alignment works well for numbers.
+</p>
+
+<p class="text-justify bg-gray-100 p-4 rounded">
+<b>text-justify</b><br>
+Justified text aligns evenly on both sides creating a newspaper-style layout.
+</p>
+
+<p class="text-start bg-gray-100 p-4 rounded">
+<b>text-start</b><br>
+Start alignment adapts to writing direction.
+</p>
+
+<p class="text-end bg-gray-100 p-4 rounded">
+<b>text-end</b><br>
+End alignment follows text direction.
+</p>
+
+</div>
+</section>
+
+<!-- VERTICAL ALIGN -->
+<section class="bg-white p-6 rounded-xl shadow space-y-4">
+<h2 class="text-2xl font-bold border-b pb-2">Vertical Alignment</h2>
+
+<div class="bg-gray-100 p-6 rounded flex flex-wrap gap-6 text-lg">
+<span class="align-baseline">Baseline</span>
+<span class="align-top">Top</span>
+<span class="align-middle">Middle</span>
+<span class="align-bottom">Bottom</span>
+<span class="align-text-top">Text Top</span>
+<span class="align-text-bottom">Text Bottom</span>
+<span class="align-sub">Sub</span>
+<span class="align-super">Super</span>
+</div>
+</section>
+
+<!-- WHITESPACE -->
+<section class="bg-white p-6 rounded-xl shadow space-y-4">
+<h2 class="text-2xl font-bold border-b pb-2">Whitespace Handling</h2>
+
+<div class="space-y-4">
+
+<p class="whitespace-normal bg-gray-100 p-4 rounded">
+<b>whitespace-normal</b><br>
+Text wraps normally when reaching the edge.
+</p>
+
+<p class="whitespace-nowrap bg-gray-100 p-4 rounded overflow-x-auto">
+<b>whitespace-nowrap</b><br>
+This line will not wrap even if it becomes very very very long.
+</p>
+
+<pre class="whitespace-pre bg-gray-100 p-4 rounded">
+whitespace-pre:
+Line breaks
+    and spaces
+        are preserved.
+</pre>
+
+<p class="whitespace-pre-line bg-gray-100 p-4 rounded">
+<b>whitespace-pre-line</b>
+Line breaks stay  
+but spaces collapse.
+</p>
+
+<p class="whitespace-pre-wrap bg-gray-100 p-4 rounded">
+<b>whitespace-pre-wrap</b>
+Line breaks and spaces stay   and text wraps.
+</p>
+
+</div>
+</section>
+
+<!-- WORD BREAK -->
+<section class="bg-white p-6 rounded-xl shadow space-y-4 max-w-xl">
+<h2 class="text-2xl font-bold border-b pb-2">Word Break</h2>
+
+<p class="break-normal bg-gray-100 p-4 rounded">
+<b>break-normal</b><br>
+superlongwordwithoutbreakpointswilloverflow
+</p>
+
+<p class="break-words bg-gray-100 p-4 rounded">
+<b>break-words</b><br>
+superlongwordwithoutbreakpointswillwrap
+</p>
+
+<p class="break-all bg-gray-100 p-4 rounded">
+<b>break-all</b><br>
+superlongwordbreaksanywhere
+</p>
+
+<p class="break-keep bg-gray-100 p-4 rounded">
+<b>break-keep</b><br>
+Words stay intact when possible.
+</p>
+</section>
+
+<!-- TEXT INDENT -->
+<section class="bg-white p-6 rounded-xl shadow space-y-4">
+<h2 class="text-2xl font-bold border-b pb-2">Text Indent</h2>
+
+<p class="indent-0 bg-gray-100 p-4 rounded">indent-0 → No indent</p>
+<p class="indent-4 bg-gray-100 p-4 rounded">indent-4 → Paragraph indent</p>
+<p class="indent-8 bg-gray-100 p-4 rounded">indent-8 → Larger indent</p>
+<p class="indent-16 bg-gray-100 p-4 rounded">indent-16 → Strong indent</p>
+</section>
+
+<!-- HYPHENS -->
+<section class="bg-white p-6 rounded-xl shadow space-y-4 max-w-xl">
+<h2 class="text-2xl font-bold border-b pb-2">Hyphenation</h2>
+
+<p class="hyphens-none bg-gray-100 p-4 rounded">
+<b>hyphens-none</b><br>
+Longwordswithoutbreakswonothyphenate.
+</p>
+
+<p class="hyphens-manual bg-gray-100 p-4 rounded">
+<b>hyphens-manual</b><br>
+Add hy­phens manually.
+</p>
+
+<p class="hyphens-auto bg-gray-100 p-4 rounded">
+<b>hyphens-auto</b><br>
+Automatic hyphenation when needed.
+</p>
+</section>
+
+<!-- REAL WORLD CARD -->
+<section class="bg-white p-6 rounded-xl shadow max-w-2xl mx-auto space-y-3">
+<h2 class="text-xl font-bold">Real World Example</h2>
+
+<p class="text-justify indent-8 leading-relaxed">
+Good typography improves readability. Using alignment, whitespace,
+and wrapping correctly ensures content looks professional across
+all screen sizes.
+</p>
+</section>
+
+<footer class="text-center text-gray-500 pt-10">
+Tailwind Text Layout Playground
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Advanced Tailwind Showcase</title>
+<script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gradient-to-br from-gray-900 to-gray-800 text-white p-10 space-y-20">
+
+<!-- HEADER -->
+<section class="text-center space-y-4">
+  <h1 class="text-5xl font-bold">Tailwind CSS Advanced Showcase</h1>
+  <p class="text-gray-300">Effects • Filters • Blending • Animations</p>
+</section>
+
+<!-- OPACITY -->
+<section class="space-y-6">
+<h2 class="text-3xl font-bold">Opacity</h2>
+
+<div class="flex gap-6">
+  <div class="w-24 h-24 bg-blue-500 opacity-25 flex items-center justify-center rounded">25%</div>
+  <div class="w-24 h-24 bg-blue-500 opacity-50 flex items-center justify-center rounded">50%</div>
+  <div class="w-24 h-24 bg-blue-500 opacity-75 flex items-center justify-center rounded">75%</div>
+  <div class="w-24 h-24 bg-blue-500 opacity-100 flex items-center justify-center rounded">100%</div>
+</div>
+</section>
+
+<!-- BLEND MODES -->
+<section class="space-y-6">
+<h2 class="text-3xl font-bold">Blend Modes</h2>
+
+<div class="flex gap-10">
+
+  <div class="relative w-60 h-36 bg-yellow-300 rounded overflow-hidden">
+    <div class="absolute inset-0 bg-blue-600 mix-blend-multiply"></div>
+    <p class="absolute inset-0 flex items-center justify-center font-bold text-black">
+      Multiply
+    </p>
+  </div>
+
+  <div class="relative w-60 h-36 bg-yellow-300 rounded overflow-hidden">
+    <div class="absolute inset-0 bg-red-500 mix-blend-screen"></div>
+    <p class="absolute inset-0 flex items-center justify-center font-bold text-black">
+      Screen
+    </p>
+  </div>
+
+</div>
+</section>
+
+<!-- GLASSMORPHISM -->
+<section class="space-y-6">
+<h2 class="text-3xl font-bold">Glassmorphism</h2>
+
+<div class="relative w-80 h-48 rounded-xl overflow-hidden">
+  <img src="https://via.placeholder.com/400" class="w-full h-full object-cover">
+
+  <div class="absolute inset-0 bg-white/20 backdrop-blur-lg flex items-center justify-center text-xl font-bold">
+    Frosted Glass Effect
+  </div>
+</div>
+</section>
+
+<!-- FILTERS -->
+<section class="space-y-6">
+<h2 class="text-3xl font-bold">Image Filters</h2>
+
+<div class="flex gap-8 flex-wrap">
+
+<img src="https://via.placeholder.com/150" class="blur-sm rounded">
+<img src="https://via.placeholder.com/150" class="brightness-150 rounded">
+<img src="https://via.placeholder.com/150" class="contrast-150 rounded">
+<img src="https://via.placeholder.com/150" class="grayscale hover:grayscale-0 transition rounded">
+<img src="https://via.placeholder.com/150" class="sepia rounded">
+<img src="https://via.placeholder.com/150" class="invert rounded">
+
+</div>
+</section>
+
+<!-- HOVER CARDS -->
+<section class="space-y-6">
+<h2 class="text-3xl font-bold">Hover Cards</h2>
+
+<div class="grid grid-cols-3 gap-8">
+
+<div class="bg-gray-700 p-6 rounded-xl transition hover:scale-110 hover:shadow-2xl">
+  <h3 class="text-xl font-bold">Card 1</h3>
+  <p class="text-gray-300">Hover me 🚀</p>
+</div>
+
+<div class="bg-purple-600 p-6 rounded-xl transition hover:-translate-y-3 hover:rotate-1">
+  <h3 class="text-xl font-bold">Card 2</h3>
+  <p>Smooth movement</p>
+</div>
+
+<div class="bg-pink-600 p-6 rounded-xl transition-all duration-500 hover:bg-pink-700 hover:scale-105">
+  <h3 class="text-xl font-bold">Card 3</h3>
+  <p>Color + scale</p>
+</div>
+
+</div>
+</section>
+
+<!-- BUTTON ANIMATIONS -->
+<section class="space-y-6 text-center">
+<h2 class="text-3xl font-bold">Animated Buttons</h2>
+
+<div class="space-x-6">
+
+<button class="bg-blue-600 px-6 py-3 rounded-lg transition hover:scale-110 hover:bg-blue-700">
+  Hover Me
+</button>
+
+<button class="bg-green-600 px-6 py-3 rounded-lg transition-all duration-500 hover:shadow-xl hover:-translate-y-2">
+  Lift Up
+</button>
+
+<button class="bg-gradient-to-r from-purple-500 to-pink-500 px-6 py-3 rounded-lg animate-pulse">
+  Pulse
+</button>
+
+</div>
+</section>
+
+<!-- FOOTER -->
+<section class="text-center text-gray-400">
+  <p>Built with Tailwind CSS ❤️</p>
+</section>
+
+</body>
+</html>

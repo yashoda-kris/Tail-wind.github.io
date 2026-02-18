@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Premium Tailwind Animations</title>
+
+<script src="https://cdn.tailwindcss.com"></script>
+
+<script>
+tailwind.config = {
+  theme: {
+    extend: {
+      animation: {
+        float: "float 6s ease-in-out infinite",
+      },
+      keyframes: {
+        float: {
+          "0%,100%": { transform: "translateY(0px)" },
+          "50%": { transform: "translateY(-20px)" },
+        },
+      },
+    },
+  },
+};
+</script>
+
+</head>
+
+<body class="bg-gradient-to-br from-indigo-100 via-white to-purple-100 min-h-screen text-gray-800">
+
+<!-- HEADER -->
+<header class="text-center py-12">
+  <h1 class="text-5xl font-bold bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent">
+    Smooth UI Animations
+  </h1>
+  <p class="mt-4 text-gray-600 text-lg">
+    Premium feel • Modern look • Built with Tailwind
+  </p>
+</header>
+
+<!-- MAIN GRID -->
+<section class="max-w-6xl mx-auto grid md:grid-cols-3 gap-8 p-6">
+
+  <!-- CARD 1 -->
+  <div class="backdrop-blur-lg bg-white/70 p-8 rounded-2xl shadow-xl hover:shadow-2xl transition duration-500 hover:-translate-y-2">
+
+    <div class="animate-spin h-12 w-12 border-4 border-indigo-200 border-t-indigo-600 rounded-full mx-auto"></div>
+
+    <h2 class="text-xl font-semibold mt-6 text-center">Loader</h2>
+    <p class="text-gray-500 text-center mt-2">
+      Smooth infinite spinner animation
+    </p>
+  </div>
+
+  <!-- CARD 2 -->
+  <div class="backdrop-blur-lg bg-white/70 p-8 rounded-2xl shadow-xl hover:shadow-2xl transition duration-500 hover:-translate-y-2 text-center">
+
+    <div class="relative inline-flex">
+      <span class="absolute inset-0 rounded-full bg-pink-400 animate-ping"></span>
+      <span class="relative bg-pink-500 text-white px-6 py-3 rounded-full font-semibold">
+        Live
+      </span>
+    </div>
+
+    <h2 class="text-xl font-semibold mt-6">Attention</h2>
+    <p class="text-gray-500 mt-2">
+      Ping effect draws focus
+    </p>
+  </div>
+
+  <!-- CARD 3 -->
+  <div class="backdrop-blur-lg bg-white/70 p-8 rounded-2xl shadow-xl hover:shadow-2xl transition duration-500 hover:-translate-y-2 text-center">
+
+    <div class="text-5xl text-indigo-600 animate-bounce">
+      ↓
+    </div>
+
+    <h2 class="text-xl font-semibold mt-6">Bounce</h2>
+    <p class="text-gray-500 mt-2">
+      Friendly micro-interaction
+    </p>
+  </div>
+
+</section>
+
+<!-- FEATURE SECTION -->
+<section class="max-w-5xl mx-auto mt-16 p-6 grid md:grid-cols-2 gap-10 items-center">
+
+  <!-- IMAGE -->
+  <div class="relative overflow-hidden rounded-3xl shadow-2xl group">
+    <img
+      src="https://images.unsplash.com/photo-1555212697-194d092e3b8f?q=80&w=830&h=844&auto=format&fit=crop"
+      class="object-cover w-full h-full grayscale group-hover:grayscale-0 scale-110 group-hover:scale-100 transition duration-700"
+    >
+
+    <div class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>
+
+    <h3 class="absolute bottom-6 left-6 text-white text-2xl font-semibold">
+      Feel Good Design
+    </h3>
+  </div>
+
+  <!-- TEXT -->
+  <div>
+    <h2 class="text-4xl font-bold mb-4">
+      Smooth Experience
+    </h2>
+
+    <p class="text-gray-600 leading-relaxed mb-6">
+      Modern UI is about subtle motion, soft shadows, and clean spacing.
+      Tailwind makes it effortless to build premium interfaces without
+      writing custom CSS.
+    </p>
+
+    <button class="px-8 py-4 bg-gradient-to-r from-indigo-600 to-purple-600 text-white rounded-xl shadow-lg hover:shadow-xl hover:scale-105 transition duration-300">
+      Explore More
+    </button>
+  </div>
+
+</section>
+
+<!-- FLOATING BUTTON -->
+<button class="fixed bottom-8 right-8 bg-indigo-600 text-white p-5 rounded-full shadow-xl hover:scale-110 transition animate-float">
+  ↑
+</button>
+
+</body>
+</html>

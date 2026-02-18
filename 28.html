@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Advanced Cursor & Pointer UI</title>
+
+<script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="min-h-screen bg-gradient-to-br from-slate-100 via-white to-indigo-100 p-10 space-y-16">
+
+<!-- HEADER -->
+<div class="text-center space-y-3">
+  <h1 class="text-5xl font-extrabold bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent">
+    Cursor & Pointer UI
+  </h1>
+  <p class="text-gray-600 text-lg">Smooth interactions • Premium feel</p>
+</div>
+
+<!-- CURSOR TYPES -->
+<section class="max-w-5xl mx-auto bg-white/70 backdrop-blur-xl p-8 rounded-3xl shadow-xl space-y-6">
+
+<h2 class="text-2xl font-bold text-gray-800">Cursor Styles</h2>
+
+<div class="flex flex-wrap gap-5">
+
+<button class="px-6 py-3 bg-gradient-to-r from-blue-500 to-indigo-600 text-white rounded-xl
+hover:scale-110 shadow-lg hover:shadow-xl transition cursor-pointer">
+Pointer
+</button>
+
+<button class="px-6 py-3 bg-gradient-to-r from-green-500 to-emerald-600 text-white rounded-xl
+hover:scale-110 shadow-lg transition cursor-text">
+Text
+</button>
+
+<button class="px-6 py-3 bg-gradient-to-r from-purple-500 to-pink-600 text-white rounded-xl
+hover:scale-110 shadow-lg transition cursor-wait">
+Wait
+</button>
+
+<button class="px-6 py-3 bg-gradient-to-r from-red-500 to-rose-600 text-white rounded-xl
+shadow-lg opacity-90 hover:opacity-100 transition cursor-not-allowed">
+Not Allowed
+</button>
+
+<button class="px-6 py-3 bg-gradient-to-r from-amber-400 to-orange-500 text-white rounded-xl
+hover:scale-110 shadow-lg transition cursor-move">
+Move
+</button>
+
+<button class="px-6 py-3 bg-gradient-to-r from-indigo-500 to-purple-600 text-white rounded-xl
+hover:scale-110 shadow-lg transition cursor-grab active:cursor-grabbing">
+Grab
+</button>
+
+</div>
+</section>
+
+<!-- POINTER EVENTS DEMO -->
+<section class="max-w-5xl mx-auto bg-white/70 backdrop-blur-xl p-8 rounded-3xl shadow-xl space-y-6">
+
+<h2 class="text-2xl font-bold text-gray-800">Pointer Events</h2>
+
+<div class="relative h-48 rounded-2xl overflow-hidden shadow-inner bg-gradient-to-r from-indigo-200 to-purple-200">
+
+<!-- Click-through overlay -->
+<div class="absolute inset-0 bg-black/40 pointer-events-none flex items-center justify-center">
+  <span class="text-white text-xl font-semibold">Click-through Overlay</span>
+</div>
+
+<button class="absolute bottom-6 left-1/2 -translate-x-1/2
+bg-gradient-to-r from-indigo-600 to-purple-600
+text-white px-6 py-3 rounded-xl
+hover:scale-110 shadow-xl transition
+pointer-events-auto">
+Click Me
+</button>
+
+</div>
+</section>
+
+<!-- DISABLED STATES -->
+<section class="max-w-5xl mx-auto bg-white/70 backdrop-blur-xl p-8 rounded-3xl shadow-xl space-y-6">
+
+<h2 class="text-2xl font-bold text-gray-800">Disabled State</h2>
+
+<button class="px-8 py-4 rounded-xl text-white font-semibold
+bg-gray-400 opacity-60
+cursor-not-allowed pointer-events-none
+shadow-md">
+Disabled Button
+</button>
+
+</section>
+
+<!-- TOUCH ACTION -->
+<section class="max-w-5xl mx-auto bg-white/70 backdrop-blur-xl p-8 rounded-3xl shadow-xl space-y-6">
+
+<h2 class="text-2xl font-bold text-gray-800">Touch Behavior</h2>
+
+<div class="h-40 rounded-2xl bg-gradient-to-r from-green-200 to-emerald-300
+p-6 touch-pan-y shadow-inner">
+
+<p class="text-gray-700 font-medium">
+Touch pan-y enabled → vertical scroll only on touch devices.
+</p>
+
+</div>
+
+</section>
+
+<!-- FLOATING CTA -->
+<div class="flex justify-center">
+
+<button class="px-10 py-5 rounded-full text-white text-xl font-semibold
+bg-gradient-to-r from-cyan-500 to-blue-600
+shadow-xl hover:shadow-2xl
+hover:-translate-y-2 hover:scale-110
+transition-all duration-300 cursor-pointer">
+Feel-Good Interaction
+</button>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Advanced Tailwind Text Utilities</title>
+
+<script src="https://cdn.tailwindcss.com"></script>
+
+<script>
+tailwind.config = {
+  darkMode: "class",
+};
+</script>
+
+</head>
+
+<body class="bg-gray-100 dark:bg-gray-900 text-gray-800 dark:text-gray-200 p-6 md:p-12 space-y-12">
+
+<!-- HEADER -->
+<header class="text-center space-y-4">
+  <h1 class="text-4xl md:text-6xl font-extrabold bg-gradient-to-r from-blue-500 to-purple-600 text-transparent bg-clip-text">
+    Tailwind Text Utilities
+  </h1>
+
+  <button onclick="document.documentElement.classList.toggle('dark')"
+    class="px-6 py-2 bg-black text-white rounded-lg shadow hover:scale-105 transition">
+    Toggle Dark Mode
+  </button>
+</header>
+
+<!-- TEXT COLORS -->
+<section class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow space-y-3">
+<h2 class="text-2xl font-bold border-b pb-2">Text Colors</h2>
+
+<div class="grid md:grid-cols-3 gap-3">
+<p class="text-red-500">Red 500</p>
+<p class="text-green-500">Green 500</p>
+<p class="text-blue-500">Blue 500</p>
+<p class="text-purple-500">Purple 500</p>
+<p class="text-pink-500">Pink 500</p>
+<p class="text-yellow-500">Yellow 500</p>
+<p class="text-gray-500">Gray 500</p>
+<p class="text-black">Black</p>
+<p class="text-white bg-gray-800 px-2">White</p>
+</div>
+</section>
+
+<!-- GRADIENT TEXT -->
+<section class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow text-center space-y-4">
+<h2 class="text-2xl font-bold border-b pb-2">Gradient Text</h2>
+
+<h1 class="text-5xl font-extrabold bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 text-transparent bg-clip-text">
+Gradient Magic
+</h1>
+</section>
+
+<!-- TEXT DECORATION -->
+<section class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow space-y-3">
+<h2 class="text-2xl font-bold border-b pb-2">Text Decoration</h2>
+
+<p class="underline decoration-solid">Underline Solid</p>
+<p class="underline decoration-double">Double Underline</p>
+<p class="underline decoration-dotted">Dotted</p>
+<p class="underline decoration-dashed">Dashed</p>
+<p class="underline decoration-wavy">Wavy</p>
+
+<p class="underline decoration-4">Thickness 4</p>
+<p class="underline underline-offset-8">Offset 8</p>
+<p class="underline decoration-red-500">Red Decoration</p>
+</section>
+
+<!-- TEXT TRANSFORM -->
+<section class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow space-y-2">
+<h2 class="text-2xl font-bold border-b pb-2">Text Transform</h2>
+
+<p class="uppercase">uppercase text example</p>
+<p class="lowercase">LOWERCASE TEXT</p>
+<p class="capitalize">capitalize every word</p>
+<p class="normal-case">Normal Case</p>
+</section>
+
+<!-- ALIGNMENT -->
+<section class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow space-y-2">
+<h2 class="text-2xl font-bold border-b pb-2">Text Alignment</h2>
+
+<p class="text-left">Left aligned text</p>
+<p class="text-center">Center aligned text</p>
+<p class="text-right">Right aligned text</p>
+<p class="text-justify">
+Justified text looks clean in articles and blogs. It aligns text evenly on both sides.
+</p>
+</section>
+
+<!-- WRAP -->
+<section class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow space-y-2 max-w-md">
+<h2 class="text-2xl font-bold border-b pb-2">Wrapping</h2>
+
+<p class="break-normal bg-gray-200 p-2">
+break-normal: LongWordWithoutBreakPointsMayOverflow
+</p>
+
+<p class="break-words bg-gray-200 p-2">
+break-words: LongWordWithoutBreakPointsMayOverflow
+</p>
+
+<p class="break-all bg-gray-200 p-2">
+break-all: LongWordWithoutBreakPointsMayOverflow
+</p>
+</section>
+
+<!-- OVERFLOW -->
+<section class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow space-y-2 max-w-md">
+<h2 class="text-2xl font-bold border-b pb-2">Text Overflow</h2>
+
+<p class="truncate bg-gray-200 p-2">
+This is a very long text that will truncate with ellipsis.
+</p>
+
+<p class="text-ellipsis overflow-hidden whitespace-nowrap bg-gray-200 p-2">
+Ellipsis overflow example for long text content.
+</p>
+
+<p class="text-clip overflow-hidden whitespace-nowrap bg-gray-200 p-2">
+Clipped text example for overflow.
+</p>
+</section>
+
+<!-- LINE CLAMP -->
+<section class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow space-y-2 max-w-lg">
+<h2 class="text-2xl font-bold border-b pb-2">Line Clamp</h2>
+
+<p class="line-clamp-2">
+This is a long paragraph demonstrating line clamp. It will stop after two lines and show ellipsis automatically using Tailwind plugin utilities.
+</p>
+</section>
+
+<!-- RESPONSIVE -->
+<section class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow text-center space-y-4">
+<h2 class="text-2xl font-bold border-b pb-2">Responsive Text</h2>
+
+<h1 class="text-xl sm:text-3xl md:text-5xl lg:text-7xl font-bold">
+Resize Screen
+</h1>
+</section>
+
+<!-- CARDS DEMO -->
+<section class="grid md:grid-cols-3 gap-6">
+<div class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow">
+<h3 class="font-bold text-lg">Readable</h3>
+<p class="text-gray-600 dark:text-gray-400">
+Good text utilities improve readability.
+</p>
+</div>
+
+<div class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow">
+<h3 class="font-bold text-lg">Flexible</h3>
+<p class="text-gray-600 dark:text-gray-400">
+You can style text without writing CSS.
+</p>
+</div>
+
+<div class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow">
+<h3 class="font-bold text-lg">Powerful</h3>
+<p class="text-gray-600 dark:text-gray-400">
+Combine utilities for advanced typography.
+</p>
+</div>
+</section>
+
+<footer class="text-center text-gray-500 pt-10">
+Advanced Tailwind Text Playground
+</footer>
+
+</body>
+</html>

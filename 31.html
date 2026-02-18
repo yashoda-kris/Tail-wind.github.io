@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Advanced Tailwind Demo</title>
+
+<script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gradient-to-br from-slate-50 via-white to-indigo-50 text-gray-800">
+
+<!-- ================= NAVBAR ================= -->
+<header class="fixed w-full z-50 bg-white/80 backdrop-blur-xl shadow-sm">
+
+<div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+
+<h1 class="text-2xl font-extrabold bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent">
+MySite
+</h1>
+
+<!-- Desktop Menu -->
+<nav class="hidden md:flex gap-8 font-medium">
+<a href="#home" class="hover:text-indigo-600">Home</a>
+<a href="#features" class="hover:text-indigo-600">Features</a>
+<a href="#gallery" class="hover:text-indigo-600">Gallery</a>
+<a href="#contact" class="hover:text-indigo-600">Contact</a>
+</nav>
+
+<!-- Mobile Menu -->
+<details class="md:hidden relative">
+<summary class="list-none cursor-pointer text-2xl">☰</summary>
+
+<div class="absolute right-0 mt-4 w-48 bg-white shadow-xl rounded-xl overflow-hidden">
+<a href="#home" class="block px-5 py-3 hover:bg-gray-100">Home</a>
+<a href="#features" class="block px-5 py-3 hover:bg-gray-100">Features</a>
+<a href="#gallery" class="block px-5 py-3 hover:bg-gray-100">Gallery</a>
+<a href="#contact" class="block px-5 py-3 hover:bg-gray-100">Contact</a>
+</div>
+</details>
+
+</div>
+</header>
+
+<!-- ================= HERO ================= -->
+<section id="home" class="min-h-screen flex items-center justify-center text-center pt-24">
+
+<div class="space-y-6 px-6">
+
+<h2 class="text-4xl md:text-6xl font-extrabold bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent">
+Modern Tailwind UI
+</h2>
+
+<p class="max-w-xl mx-auto text-gray-600">
+Beautiful responsive layout built using only Tailwind CSS utilities.
+</p>
+
+<details class="group inline-block">
+<summary class="list-none cursor-pointer bg-gradient-to-r from-indigo-600 to-purple-600 text-white px-8 py-4 rounded-xl font-semibold shadow-lg hover:scale-105 transition">
+Open Modal
+</summary>
+
+<!-- Modal -->
+<div class="fixed inset-0 bg-black/40 flex items-center justify-center p-6">
+
+<div class="bg-white max-w-md w-full rounded-2xl p-8 shadow-2xl space-y-4">
+
+<h3 class="text-2xl font-bold">CSS-Only Modal</h3>
+
+<p class="text-gray-600">
+No JavaScript needed. Pure Tailwind power ✨
+</p>
+
+<p class="text-sm text-gray-400">
+Click outside or toggle to close
+</p>
+
+</div>
+</div>
+
+</details>
+
+</div>
+</section>
+
+<!-- ================= FEATURES ================= -->
+<section id="features" class="py-24 max-w-7xl mx-auto px-6">
+
+<h3 class="text-3xl font-bold text-center mb-14">
+Features
+</h3>
+
+<div class="grid md:grid-cols-3 gap-10">
+
+<div class="bg-white p-8 rounded-2xl shadow hover:shadow-xl hover:-translate-y-2 transition space-y-3">
+<h4 class="font-bold text-lg">Responsive</h4>
+<p class="text-gray-600">Mobile-first and fully responsive layouts.</p>
+</div>
+
+<div class="bg-white p-8 rounded-2xl shadow hover:shadow-xl hover:-translate-y-2 transition space-y-3">
+<h4 class="font-bold text-lg">Modern UI</h4>
+<p class="text-gray-600">Glassmorphism and smooth animations.</p>
+</div>
+
+<div class="bg-white p-8 rounded-2xl shadow hover:shadow-xl hover:-translate-y-2 transition space-y-3">
+<h4 class="font-bold text-lg">Utility First</h4>
+<p class="text-gray-600">Design quickly without custom CSS.</p>
+</div>
+
+</div>
+</section>
+
+<!-- ================= GALLERY ================= -->
+<section id="gallery" class="py-24 bg-gray-100 px-6">
+
+<h3 class="text-3xl font-bold text-center mb-12">
+Horizontal Scroll
+</h3>
+
+<div class="flex gap-8 overflow-x-auto snap-x snap-mandatory pb-6">
+
+<div class="snap-center shrink-0 w-72 h-44 bg-gradient-to-r from-red-400 to-pink-500 rounded-2xl flex items-center justify-center text-white text-xl font-bold shadow-lg hover:scale-105 transition">
+Card 1
+</div>
+
+<div class="snap-center shrink-0 w-72 h-44 bg-gradient-to-r from-green-400 to-emerald-500 rounded-2xl flex items-center justify-center text-white text-xl font-bold shadow-lg hover:scale-105 transition">
+Card 2
+</div>
+
+<div class="snap-center shrink-0 w-72 h-44 bg-gradient-to-r from-blue-400 to-indigo-500 rounded-2xl flex items-center justify-center text-white text-xl font-bold shadow-lg hover:scale-105 transition">
+Card 3
+</div>
+
+<div class="snap-center shrink-0 w-72 h-44 bg-gradient-to-r from-purple-400 to-fuchsia-500 rounded-2xl flex items-center justify-center text-white text-xl font-bold shadow-lg hover:scale-105 transition">
+Card 4
+</div>
+
+</div>
+</section>
+
+<!-- ================= CONTACT ================= -->
+<section id="contact" class="py-24 text-center px-6">
+
+<h3 class="text-3xl font-bold mb-6">Contact Us</h3>
+
+<button class="bg-gradient-to-r from-indigo-600 to-purple-600 text-white px-8 py-4 rounded-xl font-semibold shadow-lg hover:scale-110 hover:shadow-xl transition">
+Send Message
+</button>
+
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer class="bg-gray-900 text-gray-400 text-center py-8">
+© 2026 MySite. Crafted with Tailwind CSS.
+</footer>
+
+</body>
+</html>

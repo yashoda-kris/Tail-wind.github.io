@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Advanced Outline & Ring</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="min-h-screen bg-gradient-to-br from-slate-900 via-gray-900 to-black text-white p-8">
+
+<!-- HEADER -->
+<header class="text-center mb-12">
+  <h1 class="text-4xl md:text-5xl font-extrabold bg-gradient-to-r from-cyan-400 to-purple-500 text-transparent bg-clip-text">
+    Tailwind Outline & Ring
+  </h1>
+  <p class="text-gray-400 mt-3">Modern UI Showcase</p>
+</header>
+
+<!-- GRID -->
+<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+<!-- OUTLINE WIDTH -->
+<section class="bg-white/5 backdrop-blur-lg border border-white/10 p-6 rounded-2xl hover:scale-105 transition">
+<h2 class="text-xl font-bold mb-4 text-cyan-400">Outline Width</h2>
+
+<div class="space-y-4 text-black">
+  <div class="bg-white p-4 outline-0 outline-black rounded-lg">outline-0</div>
+  <div class="bg-white p-4 outline outline-1 outline-black rounded-lg">outline-1</div>
+  <div class="bg-white p-4 outline-2 outline-black rounded-lg">outline-2</div>
+  <div class="bg-white p-4 outline-4 outline-black rounded-lg">outline-4</div>
+  <div class="bg-white p-4 outline-8 outline-black rounded-lg">outline-8</div>
+</div>
+</section>
+
+<!-- OUTLINE STYLE -->
+<section class="bg-white/5 backdrop-blur-lg border border-white/10 p-6 rounded-2xl hover:scale-105 transition">
+<h2 class="text-xl font-bold mb-4 text-purple-400">Outline Style</h2>
+
+<div class="space-y-4 text-black">
+  <div class="bg-white p-4 outline outline-black rounded-lg">Solid</div>
+  <div class="bg-white p-4 outline-dashed outline-black rounded-lg">Dashed</div>
+  <div class="bg-white p-4 outline-dotted outline-black rounded-lg">Dotted</div>
+  <div class="bg-white p-4 outline-double outline-black rounded-lg">Double</div>
+  <div class="bg-white p-4 outline-none rounded-lg border">None</div>
+</div>
+</section>
+
+<!-- OUTLINE OFFSET -->
+<section class="bg-white/5 backdrop-blur-lg border border-white/10 p-6 rounded-2xl hover:scale-105 transition">
+<h2 class="text-xl font-bold mb-4 text-pink-400">Outline Offset</h2>
+
+<div class="space-y-4 text-black">
+  <div class="bg-white p-4 outline outline-2 outline-blue-500 outline-offset-0 rounded-lg">0</div>
+  <div class="bg-white p-4 outline outline-2 outline-blue-500 outline-offset-2 rounded-lg">2</div>
+  <div class="bg-white p-4 outline outline-2 outline-blue-500 outline-offset-4 rounded-lg">4</div>
+  <div class="bg-white p-4 outline outline-2 outline-blue-500 outline-offset-8 rounded-lg">8</div>
+</div>
+</section>
+
+<!-- RING -->
+<section class="bg-white/5 backdrop-blur-lg border border-white/10 p-6 rounded-2xl hover:scale-105 transition">
+<h2 class="text-xl font-bold mb-4 text-yellow-400">Ring</h2>
+
+<div class="space-y-4 text-black">
+  <div class="bg-white p-4 ring-1 ring-blue-500 rounded-lg">ring-1</div>
+  <div class="bg-white p-4 ring-2 ring-blue-500 rounded-lg">ring-2</div>
+  <div class="bg-white p-4 ring ring-blue-500 rounded-lg">default</div>
+  <div class="bg-white p-4 ring-4 ring-blue-500 rounded-lg">ring-4</div>
+  <div class="bg-white p-4 ring-8 ring-blue-500 rounded-lg">ring-8</div>
+  <div class="bg-white p-4 ring-4 ring-inset ring-red-500 rounded-lg">inset</div>
+</div>
+</section>
+
+<!-- RING OPACITY -->
+<section class="bg-white/5 backdrop-blur-lg border border-white/10 p-6 rounded-2xl hover:scale-105 transition">
+<h2 class="text-xl font-bold mb-4 text-green-400">Ring Opacity</h2>
+
+<div class="space-y-4 text-black">
+  <div class="bg-white p-4 ring-4 ring-blue-500/25 rounded-lg">25%</div>
+  <div class="bg-white p-4 ring-4 ring-blue-500/50 rounded-lg">50%</div>
+  <div class="bg-white p-4 ring-4 ring-blue-500/75 rounded-lg">75%</div>
+  <div class="bg-white p-4 ring-4 ring-blue-500 rounded-lg">100%</div>
+</div>
+</section>
+
+<!-- RING OFFSET -->
+<section class="bg-white/5 backdrop-blur-lg border border-white/10 p-6 rounded-2xl hover:scale-105 transition">
+<h2 class="text-xl font-bold mb-4 text-orange-400">Ring Offset</h2>
+
+<div class="space-y-4 text-black">
+  <div class="bg-white p-4 ring-2 ring-blue-500 ring-offset-2 rounded-lg">2</div>
+  <div class="bg-white p-4 ring-2 ring-blue-500 ring-offset-4 rounded-lg">4</div>
+  <div class="bg-white p-4 ring-2 ring-blue-500 ring-offset-8 rounded-lg">8</div>
+</div>
+</section>
+
+<!-- FOCUS EXAMPLE -->
+<section class="bg-white/5 backdrop-blur-lg border border-white/10 p-6 rounded-2xl md:col-span-2 hover:scale-105 transition">
+<h2 class="text-xl font-bold mb-6 text-cyan-300">Accessible Focus</h2>
+
+<button class="px-6 py-3 bg-green-500 hover:bg-green-600 text-white rounded-xl 
+focus:outline-none focus:ring-4 focus:ring-blue-500 focus:ring-offset-4 transition">
+  Click / Tab Focus
+</button>
+</section>
+
+</div>
+
+<!-- FOOTER -->
+<footer class="text-center text-gray-500 mt-14">
+  Premium UI • Tailwind CSS
+</footer>
+
+</body>
+</html>

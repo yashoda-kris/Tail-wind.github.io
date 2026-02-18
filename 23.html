@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Advanced Opacity & Blend Modes</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="min-h-screen bg-gradient-to-br from-slate-900 via-gray-900 to-black text-white p-8">
+
+<!-- HEADER -->
+<header class="text-center mb-14">
+  <h1 class="text-4xl md:text-5xl font-extrabold bg-gradient-to-r from-cyan-400 to-purple-500 bg-clip-text text-transparent">
+    Opacity & Blend Modes
+  </h1>
+  <p class="text-gray-400 mt-3">Modern Tailwind Visual Showcase</p>
+</header>
+
+<!-- GRID -->
+<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+<!-- OPACITY -->
+<section class="bg-white/5 backdrop-blur-lg border border-white/10 p-6 rounded-2xl hover:scale-105 transition">
+<h2 class="text-xl font-bold mb-6 text-cyan-400">Opacity</h2>
+
+<div class="flex gap-4 justify-center">
+  <div class="w-16 h-16 bg-blue-500 opacity-25 flex items-center justify-center rounded-lg">25%</div>
+  <div class="w-16 h-16 bg-blue-500 opacity-50 flex items-center justify-center rounded-lg">50%</div>
+  <div class="w-16 h-16 bg-blue-500 opacity-75 flex items-center justify-center rounded-lg">75%</div>
+  <div class="w-16 h-16 bg-blue-500 opacity-100 flex items-center justify-center rounded-lg">100%</div>
+</div>
+</section>
+
+<!-- MIX BLEND -->
+<section class="bg-white/5 backdrop-blur-lg border border-white/10 p-6 rounded-2xl hover:scale-105 transition">
+<h2 class="text-xl font-bold mb-6 text-purple-400">Mix Blend</h2>
+
+<div class="space-y-6">
+
+<div class="relative h-32 bg-yellow-300 rounded-xl overflow-hidden">
+  <div class="absolute inset-0 bg-blue-500 mix-blend-multiply"></div>
+  <div class="absolute inset-0 flex items-center justify-center font-bold text-white">
+    Multiply
+  </div>
+</div>
+
+<div class="relative h-32 bg-yellow-300 rounded-xl overflow-hidden">
+  <div class="absolute inset-0 bg-red-500 mix-blend-screen"></div>
+  <div class="absolute inset-0 flex items-center justify-center font-bold text-black">
+    Screen
+  </div>
+</div>
+
+</div>
+</section>
+
+<!-- BG BLEND -->
+<section class="bg-white/5 backdrop-blur-lg border border-white/10 p-6 rounded-2xl hover:scale-105 transition">
+<h2 class="text-xl font-bold mb-6 text-pink-400">Background Blend</h2>
+
+<div class="relative h-32 rounded-xl overflow-hidden bg-gradient-to-r from-purple-500 to-pink-500 bg-blend-overlay">
+  <div class="absolute inset-0 bg-yellow-200"></div>
+  <div class="absolute inset-0 flex items-center justify-center font-bold text-white">
+    Overlay
+  </div>
+</div>
+</section>
+
+<!-- IMAGE OVERLAY -->
+<section class="bg-white/5 backdrop-blur-lg border border-white/10 p-6 rounded-2xl hover:scale-105 transition">
+<h2 class="text-xl font-bold mb-6 text-yellow-400">Image Overlay</h2>
+
+<div class="relative h-40 rounded-xl overflow-hidden group">
+  <img src="https://picsum.photos/400/300" class="w-full h-full object-cover group-hover:scale-110 transition duration-500"/>
+  <div class="absolute inset-0 bg-black/50"></div>
+  <div class="absolute inset-0 flex items-center justify-center text-2xl font-bold">
+    Overlay Text
+  </div>
+</div>
+</section>
+
+<!-- BLEND OVER IMAGE -->
+<section class="bg-white/5 backdrop-blur-lg border border-white/10 p-6 rounded-2xl hover:scale-105 transition md:col-span-2">
+<h2 class="text-xl font-bold mb-6 text-indigo-400">Blend on Image</h2>
+
+<div class="relative h-52 rounded-xl overflow-hidden group">
+  <img src="https://picsum.photos/500/300" class="w-full h-full object-cover group-hover:scale-110 transition duration-500"/>
+  <div class="absolute inset-0 bg-gradient-to-r from-purple-500 to-pink-500 mix-blend-multiply"></div>
+</div>
+</section>
+
+</div>
+
+<!-- FOOTER -->
+<footer class="text-center text-gray-500 mt-16">
+  Premium UI • Tailwind CSS
+</footer>
+
+</body>
+</html>

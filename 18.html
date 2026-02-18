@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Advanced Border Utilities</title>
+
+<script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+
+<body class="bg-gradient-to-br from-slate-900 via-gray-900 to-black text-white min-h-screen p-8 scroll-smooth">
+
+<!-- HEADER -->
+<header class="text-center mb-14">
+  <h1 class="text-4xl md:text-5xl font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 to-purple-500">
+    Tailwind Border Utilities
+  </h1>
+  <p class="text-gray-400 mt-3">Advanced UI Showcase</p>
+</header>
+
+<!-- GRID -->
+<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+<!-- CARD 1 -->
+<div class="backdrop-blur-xl bg-white/5 border border-white/10 p-6 rounded-2xl transition duration-500 hover:scale-105 hover:shadow-2xl hover:shadow-black/60">
+
+<h2 class="font-bold mb-5 text-lg text-cyan-400">Border Width</h2>
+
+<div class="bg-white text-black p-3 rounded-xl text-center mb-3 border-0 hover:-translate-y-1 transition">border-0</div>
+<div class="bg-white text-black p-3 rounded-xl text-center mb-3 border hover:-translate-y-1 transition">border</div>
+<div class="bg-white text-black p-3 rounded-xl text-center mb-3 border-2 hover:-translate-y-1 transition">border-2</div>
+<div class="bg-white text-black p-3 rounded-xl text-center mb-3 border-4 hover:-translate-y-1 transition">border-4</div>
+<div class="bg-white text-black p-3 rounded-xl text-center border-8 hover:-translate-y-1 transition">border-8</div>
+
+</div>
+
+<!-- CARD 2 -->
+<div class="backdrop-blur-xl bg-white/5 border border-white/10 p-6 rounded-2xl transition duration-500 hover:scale-105 hover:shadow-2xl hover:shadow-black/60">
+
+<h2 class="font-bold mb-5 text-lg text-purple-400">Directional</h2>
+
+<div class="bg-white text-black p-3 rounded-xl text-center mb-3 border border-t-0 hover:-translate-y-1 transition">border-t-0</div>
+<div class="bg-white text-black p-3 rounded-xl text-center mb-3 border border-t-4 hover:-translate-y-1 transition">border-t-4</div>
+<div class="bg-white text-black p-3 rounded-xl text-center mb-3 border border-b-8 hover:-translate-y-1 transition">border-b-8</div>
+<div class="bg-white text-black p-3 rounded-xl text-center mb-3 border border-l-4 hover:-translate-y-1 transition">border-l-4</div>
+<div class="bg-white text-black p-3 rounded-xl text-center border border-r-4 hover:-translate-y-1 transition">border-r-4</div>
+
+</div>
+
+<!-- CARD 3 -->
+<div class="backdrop-blur-xl bg-white/5 border border-white/10 p-6 rounded-2xl transition duration-500 hover:scale-105 hover:shadow-2xl hover:shadow-black/60">
+
+<h2 class="font-bold mb-5 text-lg text-pink-400">X & Y Axis</h2>
+
+<div class="bg-white text-black p-3 rounded-xl text-center mb-3 border-x hover:-translate-y-1 transition">border-x</div>
+<div class="bg-white text-black p-3 rounded-xl text-center mb-3 border-x-4 hover:-translate-y-1 transition">border-x-4</div>
+<div class="bg-white text-black p-3 rounded-xl text-center mb-3 border-y hover:-translate-y-1 transition">border-y</div>
+<div class="bg-white text-black p-3 rounded-xl text-center border-y-4 hover:-translate-y-1 transition">border-y-4</div>
+
+</div>
+
+<!-- CARD 4 FULL WIDTH -->
+<div class="backdrop-blur-xl bg-white/5 border border-white/10 p-6 rounded-2xl transition duration-500 hover:scale-[1.02] hover:shadow-2xl hover:shadow-black/60 md:col-span-2 lg:col-span-3">
+
+<h2 class="font-bold mb-6 text-lg text-yellow-400">Border Styles</h2>
+
+<div class="grid md:grid-cols-3 gap-6">
+
+<div class="bg-white text-black p-4 rounded-xl text-center border border-solid hover:-translate-y-1 transition">Solid</div>
+<div class="bg-white text-black p-4 rounded-xl text-center border border-dashed hover:-translate-y-1 transition">Dashed</div>
+<div class="bg-white text-black p-4 rounded-xl text-center border border-dotted hover:-translate-y-1 transition">Dotted</div>
+<div class="bg-white text-black p-4 rounded-xl text-center border border-double hover:-translate-y-1 transition">Double</div>
+<div class="bg-white text-black p-4 rounded-xl text-center border border-hidden hover:-translate-y-1 transition">Hidden</div>
+<div class="bg-white text-black p-4 rounded-xl text-center border border-none hover:-translate-y-1 transition">None</div>
+
+</div>
+</div>
+
+</div>
+
+<!-- FOOTER -->
+<footer class="text-center mt-16 text-gray-500">
+Premium Border UI • Tailwind CSS
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Advanced Tailwind Shadows</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="min-h-screen bg-gradient-to-br from-slate-900 via-gray-900 to-black text-white p-8">
+
+<!-- HEADER -->
+<header class="text-center mb-12">
+  <h1 class="text-4xl md:text-5xl font-extrabold bg-gradient-to-r from-cyan-400 to-purple-500 text-transparent bg-clip-text">
+    Tailwind Shadows
+  </h1>
+  <p class="text-gray-400 mt-3">Modern Shadow Showcase</p>
+</header>
+
+<!-- GRID -->
+<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+<!-- SHADOW SCALE -->
+<section class="bg-white/5 backdrop-blur-lg border border-white/10 p-6 rounded-2xl hover:scale-105 transition">
+<h2 class="text-xl font-bold mb-4 text-cyan-400">Shadow Scale</h2>
+
+<div class="space-y-4 text-black">
+  <div class="bg-white p-4 rounded shadow-sm">shadow-sm</div>
+  <div class="bg-white p-4 rounded shadow">shadow</div>
+  <div class="bg-white p-4 rounded shadow-md">shadow-md</div>
+  <div class="bg-white p-4 rounded shadow-lg">shadow-lg</div>
+  <div class="bg-white p-4 rounded shadow-xl">shadow-xl</div>
+  <div class="bg-white p-4 rounded shadow-2xl">shadow-2xl</div>
+  <div class="bg-white p-4 rounded shadow-inner">shadow-inner</div>
+  <div class="bg-white p-4 rounded shadow-none border">shadow-none</div>
+</div>
+</section>
+
+<!-- COLORED SHADOWS -->
+<section class="bg-white/5 backdrop-blur-lg border border-white/10 p-6 rounded-2xl hover:scale-105 transition">
+<h2 class="text-xl font-bold mb-4 text-purple-400">Colored Shadows</h2>
+
+<div class="space-y-4 text-black">
+  <div class="bg-white p-4 rounded shadow-lg shadow-blue-500/40">Blue</div>
+  <div class="bg-white p-4 rounded shadow-lg shadow-red-500/40">Red</div>
+  <div class="bg-white p-4 rounded shadow-lg shadow-green-500/40">Green</div>
+  <div class="bg-white p-4 rounded shadow-lg shadow-purple-500/40">Purple</div>
+</div>
+</section>
+
+<!-- HOVER EFFECT -->
+<section class="bg-white/5 backdrop-blur-lg border border-white/10 p-6 rounded-2xl hover:scale-105 transition">
+<h2 class="text-xl font-bold mb-4 text-pink-400">Hover Effect</h2>
+
+<div class="bg-white p-6 rounded shadow-md hover:shadow-2xl hover:-translate-y-2 transition-all text-black text-center">
+  Hover Me 🚀
+</div>
+</section>
+
+<!-- CUSTOM SHADOWS -->
+<section class="bg-white/5 backdrop-blur-lg border border-white/10 p-6 rounded-2xl md:col-span-2 hover:scale-105 transition">
+<h2 class="text-xl font-bold mb-6 text-yellow-400">Custom Shadows</h2>
+
+<div class="grid md:grid-cols-2 gap-6 text-black">
+
+  <div class="bg-white p-6 rounded 
+  [box-shadow:0_35px_60px_-15px_rgba(0,0,0,0.4)] hover:scale-105 transition">
+    Soft Floating Shadow
+  </div>
+
+  <div class="bg-white p-6 rounded 
+  [box-shadow:inset_0_10px_25px_rgba(0,0,0,0.3)]">
+    Inset Shadow
+  </div>
+
+  <div class="bg-white p-6 rounded 
+  [box-shadow:0_0_40px_rgba(59,130,246,0.6)]">
+    Glow Shadow
+  </div>
+
+  <div class="bg-white p-6 rounded 
+  [box-shadow:0_0_60px_rgba(168,85,247,0.6)]">
+    Neon Glow
+  </div>
+
+</div>
+</section>
+
+</div>
+
+<!-- FOOTER -->
+<footer class="text-center text-gray-500 mt-14">
+  Premium UI • Tailwind CSS
+</footer>
+
+</body>
+</html>

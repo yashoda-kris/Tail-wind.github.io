@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Advanced Tailwind Background Utilities</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100 p-6 md:p-12 space-y-12">
+
+<!-- HEADER -->
+<header class="text-center space-y-3">
+  <h1 class="text-4xl md:text-5xl font-extrabold text-blue-600">
+    Tailwind Background Utilities
+  </h1>
+  <p class="text-gray-600">Colors • Opacity • Gradients • Real UI</p>
+</header>
+
+<!-- BLUE SCALE GRID -->
+<section class="bg-white p-6 rounded-xl shadow space-y-4">
+<h2 class="text-2xl font-bold">Blue Color Scale</h2>
+
+<div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4">
+
+<div class="bg-blue-50 p-4 rounded">50</div>
+<div class="bg-blue-100 p-4 rounded">100</div>
+<div class="bg-blue-200 p-4 rounded">200</div>
+<div class="bg-blue-300 p-4 rounded">300</div>
+<div class="bg-blue-400 p-4 rounded">400</div>
+
+<div class="bg-blue-500 p-4 rounded text-white">500</div>
+<div class="bg-blue-600 p-4 rounded text-white">600</div>
+<div class="bg-blue-700 p-4 rounded text-white">700</div>
+<div class="bg-blue-800 p-4 rounded text-white">800</div>
+<div class="bg-blue-900 p-4 rounded text-white">900</div>
+<div class="bg-blue-950 p-4 rounded text-white">950</div>
+
+</div>
+</section>
+
+<!-- OPACITY -->
+<section class="bg-white p-6 rounded-xl shadow space-y-4">
+<h2 class="text-2xl font-bold">Opacity Modifiers</h2>
+
+<div class="flex flex-wrap gap-4">
+
+<div class="bg-blue-500/20 p-6 rounded">20%</div>
+<div class="bg-blue-500/40 p-6 rounded">40%</div>
+<div class="bg-blue-500/60 p-6 rounded text-white">60%</div>
+<div class="bg-blue-500/80 p-6 rounded text-white">80%</div>
+<div class="bg-blue-500 p-6 rounded text-white">100%</div>
+
+</div>
+</section>
+
+<!-- GRADIENTS -->
+<section class="bg-white p-6 rounded-xl shadow space-y-4">
+<h2 class="text-2xl font-bold">Gradients</h2>
+
+<div class="grid md:grid-cols-3 gap-4">
+
+<div class="bg-gradient-to-r from-blue-400 to-indigo-600 p-8 rounded text-white">
+Gradient → Right
+</div>
+
+<div class="bg-gradient-to-br from-purple-400 to-pink-500 p-8 rounded text-white">
+Diagonal Gradient
+</div>
+
+<div class="bg-gradient-to-r from-cyan-400 via-blue-500 to-indigo-600 p-8 rounded text-white">
+Multi-stop Gradient
+</div>
+
+</div>
+</section>
+
+<!-- SPECIAL VALUES -->
+<section class="bg-white p-6 rounded-xl shadow space-y-4">
+<h2 class="text-2xl font-bold">Special Background Values</h2>
+
+<div class="flex flex-wrap gap-4">
+
+<div class="bg-white border p-6 rounded">bg-white</div>
+<div class="bg-black text-white p-6 rounded">bg-black</div>
+<div class="bg-transparent border p-6 rounded">transparent</div>
+<div class="bg-current text-blue-600 p-6 rounded">current</div>
+<div class="bg-inherit border p-6 rounded">inherit</div>
+
+</div>
+</section>
+
+<!-- ARBITRARY COLORS -->
+<section class="bg-white p-6 rounded-xl shadow space-y-4">
+<h2 class="text-2xl font-bold">Arbitrary Colors</h2>
+
+<div class="grid md:grid-cols-3 gap-4">
+
+<div class="bg-[#1da1f2] text-white p-8 rounded">
+Hex (#1da1f2)
+</div>
+
+<div class="bg-[rgb(34,197,94)] text-white p-8 rounded">
+RGB
+</div>
+
+<div class="bg-[hsl(280,80%,60%)] text-white p-8 rounded">
+HSL
+</div>
+
+</div>
+</section>
+
+<!-- REAL UI EXAMPLE -->
+<section class="bg-white p-6 rounded-xl shadow max-w-3xl mx-auto space-y-4">
+<h2 class="text-2xl font-bold">Real UI Card</h2>
+
+<div class="bg-gradient-to-r from-blue-500 to-indigo-600 p-8 rounded-xl text-white space-y-3">
+  <h3 class="text-2xl font-bold">Premium Plan</h3>
+  <p class="opacity-90">Perfect for developers and teams.</p>
+  <button class="bg-white text-blue-600 px-6 py-3 rounded-lg font-semibold">
+    Get Started
+  </button>
+</div>
+
+</section>
+
+<footer class="text-center text-gray-500 pt-6">
+Tailwind Background Playground
+</footer>
+
+</body>
+</html>

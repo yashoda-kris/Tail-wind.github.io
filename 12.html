@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Advanced Tailwind Font Utilities</title>
+
+<!-- Tailwind CDN -->
+<script src="https://cdn.tailwindcss.com"></script>
+
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+
+<script>
+tailwind.config = {
+  darkMode: "class",
+  theme: {
+    extend: {
+      fontFamily: {
+        inter: ["Inter", "sans-serif"],
+      },
+    },
+  },
+};
+</script>
+
+</head>
+
+<body class="bg-gray-100 dark:bg-gray-900 text-gray-800 dark:text-gray-200 p-6 md:p-12 space-y-12">
+
+<!-- HEADER -->
+<header class="text-center space-y-4">
+  <h1 class="text-4xl md:text-6xl font-extrabold bg-gradient-to-r from-indigo-500 to-purple-600 text-transparent bg-clip-text">
+    Tailwind Font Utilities
+  </h1>
+
+  <p class="text-gray-600 dark:text-gray-400">
+    Complete playground for mastering typography in Tailwind CSS
+  </p>
+
+  <button onclick="document.documentElement.classList.toggle('dark')"
+    class="px-6 py-2 bg-black text-white rounded-lg shadow hover:scale-105 transition">
+    Toggle Dark Mode
+  </button>
+</header>
+
+<!-- FONT WEIGHT -->
+<section class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow space-y-3">
+<h2 class="text-2xl font-bold border-b pb-2">Font Weight</h2>
+
+<p class="font-thin">Thin (100)</p>
+<p class="font-extralight">ExtraLight (200)</p>
+<p class="font-light">Light (300)</p>
+<p class="font-normal">Normal (400)</p>
+<p class="font-medium">Medium (500)</p>
+<p class="font-semibold">Semibold (600)</p>
+<p class="font-bold">Bold (700)</p>
+<p class="font-extrabold">ExtraBold (800)</p>
+<p class="font-black">Black (900)</p>
+</section>
+
+<!-- FONT STYLE -->
+<section class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow space-y-3">
+<h2 class="text-2xl font-bold border-b pb-2">Font Style</h2>
+
+<p class="italic">Italic text style</p>
+<p class="not-italic">Normal text style</p>
+</section>
+
+<!-- FONT FAMILY -->
+<section class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow space-y-3">
+<h2 class="text-2xl font-bold border-b pb-2">Font Family</h2>
+
+<p class="font-sans">Sans Serif</p>
+<p class="font-serif">Serif</p>
+<p class="font-mono">Monospace</p>
+<p class="font-inter text-lg">Inter (Google Font)</p>
+</section>
+
+<!-- NUMERIC VARIANTS -->
+<section class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow space-y-2">
+<h2 class="text-2xl font-bold border-b pb-2">Numeric Variants</h2>
+
+<p class="normal-nums">Normal: 012345</p>
+<p class="ordinal">Ordinal: 1st 2nd 3rd</p>
+<p class="slashed-zero">Slashed zero: 0</p>
+<p class="lining-nums">Lining: 123456</p>
+<p class="oldstyle-nums">Oldstyle: 123456</p>
+<p class="proportional-nums">Proportional: 123456</p>
+<p class="tabular-nums">Tabular: 123456</p>
+<p class="diagonal-fractions">Diagonal: 1/2 3/4</p>
+<p class="stacked-fractions">Stacked: 1/2 3/4</p>
+</section>
+
+<!-- LETTER SPACING -->
+<section class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow space-y-2">
+<h2 class="text-2xl font-bold border-b pb-2">Letter Spacing</h2>
+
+<p class="tracking-tighter">Tighter</p>
+<p class="tracking-tight">Tight</p>
+<p class="tracking-normal">Normal</p>
+<p class="tracking-wide">Wide</p>
+<p class="tracking-wider">Wider</p>
+<p class="tracking-widest">Widest</p>
+</section>
+
+<!-- TEXT TRANSFORM -->
+<section class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow space-y-2">
+<h2 class="text-2xl font-bold border-b pb-2">Text Transform</h2>
+
+<p class="uppercase">uppercase text</p>
+<p class="lowercase">LOWERCASE TEXT</p>
+<p class="capitalize">capitalize each word</p>
+</section>
+
+<!-- TEXT DECORATION -->
+<section class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow space-y-2">
+<h2 class="text-2xl font-bold border-b pb-2">Text Decoration</h2>
+
+<p class="underline">Underline</p>
+<p class="line-through">Line Through</p>
+<p class="overline">Overline</p>
+<p class="no-underline">No underline</p>
+</section>
+
+<!-- RESPONSIVE DEMO -->
+<section class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow text-center space-y-4">
+<h2 class="text-2xl font-bold border-b pb-2">Responsive Typography</h2>
+
+<h1 class="text-2xl sm:text-4xl md:text-6xl lg:text-7xl font-extrabold">
+Resize Screen
+</h1>
+</section>
+
+<!-- CARD DEMO -->
+<section class="grid md:grid-cols-3 gap-6">
+<div class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow hover:shadow-xl transition">
+<h3 class="text-xl font-bold mb-2">Clean UI</h3>
+<p class="text-gray-600 dark:text-gray-400">
+Good typography improves readability and UX.
+</p>
+</div>
+
+<div class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow hover:shadow-xl transition">
+<h3 class="text-xl font-bold mb-2">Fast Workflow</h3>
+<p class="text-gray-600 dark:text-gray-400">
+Utility classes speed up development.
+</p>
+</div>
+
+<div class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow hover:shadow-xl transition">
+<h3 class="text-xl font-bold mb-2">Customizable</h3>
+<p class="text-gray-600 dark:text-gray-400">
+Easily extend fonts in Tailwind config.
+</p>
+</div>
+</section>
+
+<!-- FOOTER -->
+<footer class="text-center text-gray-500 pt-10">
+<p>Advanced Tailwind Typography Playground</p>
+</footer>
+
+</body>
+</html>

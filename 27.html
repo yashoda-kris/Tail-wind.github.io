@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Advanced Tailwind UI</title>
+
+<script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="min-h-screen bg-gradient-to-br from-slate-100 via-white to-indigo-100 p-10 space-y-20">
+
+<!-- HEADER -->
+<div class="text-center space-y-4">
+  <h1 class="text-5xl font-extrabold bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent">
+    Premium Transform UI
+  </h1>
+  <p class="text-gray-600 text-lg">Smooth • Modern • Feel-Good Design</p>
+</div>
+
+<!-- GLASS CARDS -->
+<section class="grid md:grid-cols-3 gap-10 max-w-6xl mx-auto">
+
+<div class="bg-white/60 backdrop-blur-xl p-10 rounded-3xl shadow-xl
+            hover:-translate-y-4 hover:shadow-2xl
+            transition-all duration-500">
+  <h3 class="text-2xl font-bold mb-2">Lift Card</h3>
+  <p class="text-gray-600">Soft hover lift with smooth depth.</p>
+</div>
+
+<div class="bg-white/60 backdrop-blur-xl p-10 rounded-3xl shadow-xl
+            hover:scale-110 hover:shadow-2xl
+            transition-all duration-500">
+  <h3 class="text-2xl font-bold mb-2">Scale Card</h3>
+  <p class="text-gray-600">Premium zoom interaction.</p>
+</div>
+
+<div class="bg-white/60 backdrop-blur-xl p-10 rounded-3xl shadow-xl
+            hover:rotate-3 hover:shadow-2xl
+            transition-all duration-500">
+  <h3 class="text-2xl font-bold mb-2">Rotate Card</h3>
+  <p class="text-gray-600">Subtle playful rotation.</p>
+</div>
+
+</section>
+
+<!-- BUTTONS -->
+<section class="flex justify-center gap-10 flex-wrap">
+
+<button class="px-8 py-4 rounded-2xl text-white font-semibold
+               bg-gradient-to-r from-indigo-500 to-purple-600
+               hover:scale-110 hover:-translate-y-1
+               active:scale-95
+               shadow-lg hover:shadow-2xl
+               transition-all duration-300">
+  Gradient Button
+</button>
+
+<button class="px-8 py-4 rounded-2xl font-semibold
+               bg-white text-gray-800
+               shadow-lg
+               hover:bg-gray-100 hover:shadow-2xl
+               hover:-translate-y-1
+               transition-all duration-300">
+  Soft Button
+</button>
+
+</section>
+
+<!-- IMAGE INTERACTION -->
+<section class="flex justify-center">
+
+<div class="group w-80 h-56 rounded-3xl overflow-hidden shadow-2xl">
+
+  <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb"
+       class="w-full h-full object-cover
+              group-hover:scale-125 group-hover:rotate-2
+              transition-all duration-700" />
+
+</div>
+
+</section>
+
+<!-- 3D FLIP CARD -->
+<section class="flex justify-center">
+
+<div class="group w-80 h-52 [perspective:1200px]">
+
+<div class="relative h-full w-full rounded-3xl shadow-2xl
+            transition-all duration-700
+            [transform-style:preserve-3d]
+            group-hover:[transform:rotateY(180deg)]">
+
+<!-- FRONT -->
+<div class="absolute inset-0 rounded-3xl
+            bg-gradient-to-r from-indigo-500 to-purple-600
+            flex items-center justify-center
+            text-white text-3xl font-bold
+            [backface-visibility:hidden]">
+  FRONT
+</div>
+
+<!-- BACK -->
+<div class="absolute inset-0 rounded-3xl
+            bg-gradient-to-r from-pink-500 to-rose-500
+            flex items-center justify-center
+            text-white text-3xl font-bold
+            [transform:rotateY(180deg)]
+            [backface-visibility:hidden]">
+  BACK
+</div>
+
+</div>
+</div>
+
+</section>
+
+<!-- FLOATING BADGE -->
+<section class="flex justify-center">
+
+<div class="px-10 py-5 rounded-full text-white text-xl font-semibold
+            bg-gradient-to-r from-cyan-500 to-blue-600
+            shadow-xl
+            hover:shadow-2xl hover:-translate-y-2
+            transition-all duration-500">
+  Smooth Floating Badge
+</div>
+
+</section>
+
+</body>
+</html>

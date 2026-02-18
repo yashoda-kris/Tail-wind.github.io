@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Advanced Filters & Effects</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="min-h-screen bg-gradient-to-br from-slate-900 via-gray-900 to-black text-white p-8 space-y-14">
+
+<!-- HEADER -->
+<header class="text-center">
+  <h1 class="text-4xl md:text-5xl font-extrabold bg-gradient-to-r from-cyan-400 to-purple-500 bg-clip-text text-transparent">
+    Filters & Effects
+  </h1>
+  <p class="text-gray-400 mt-3">Modern Tailwind Visual Showcase</p>
+</header>
+
+<!-- GRID -->
+<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
+
+<!-- BLUR -->
+<section class="bg-white/5 backdrop-blur-lg border border-white/10 p-6 rounded-2xl hover:scale-105 transition">
+<h2 class="text-xl font-bold mb-6 text-cyan-400">Blur</h2>
+
+<div class="grid grid-cols-2 gap-4">
+  <div class="h-24 bg-blue-500 blur-none rounded-lg flex items-center justify-center">none</div>
+  <div class="h-24 bg-blue-500 blur-sm rounded-lg flex items-center justify-center">sm</div>
+  <div class="h-24 bg-blue-500 blur-md rounded-lg flex items-center justify-center">md</div>
+  <div class="h-24 bg-blue-500 blur-xl rounded-lg flex items-center justify-center">xl</div>
+</div>
+</section>
+
+<!-- BACKDROP BLUR -->
+<section class="bg-white/5 backdrop-blur-lg border border-white/10 p-6 rounded-2xl hover:scale-105 transition">
+<h2 class="text-xl font-bold mb-6 text-purple-400">Glass Effect</h2>
+
+<div class="relative h-40 rounded-xl overflow-hidden group">
+  <img src="https://picsum.photos/400/300" class="w-full h-full object-cover group-hover:scale-110 transition duration-500"/>
+  <div class="absolute inset-0 bg-white/30 backdrop-blur-md flex items-center justify-center font-bold text-black">
+    Frosted Glass
+  </div>
+</div>
+</section>
+
+<!-- BRIGHTNESS -->
+<section class="bg-white/5 backdrop-blur-lg border border-white/10 p-6 rounded-2xl hover:scale-105 transition">
+<h2 class="text-xl font-bold mb-6 text-yellow-400">Brightness</h2>
+
+<div class="flex gap-4 justify-center">
+  <img src="https://picsum.photos/200" class="w-24 h-24 object-cover rounded-lg brightness-50"/>
+  <img src="https://picsum.photos/201" class="w-24 h-24 object-cover rounded-lg brightness-100"/>
+  <img src="https://picsum.photos/202" class="w-24 h-24 object-cover rounded-lg brightness-150"/>
+</div>
+</section>
+
+<!-- CONTRAST -->
+<section class="bg-white/5 backdrop-blur-lg border border-white/10 p-6 rounded-2xl hover:scale-105 transition">
+<h2 class="text-xl font-bold mb-6 text-pink-400">Contrast</h2>
+
+<div class="flex gap-4 justify-center">
+  <img src="https://picsum.photos/203" class="w-24 h-24 object-cover rounded-lg contrast-50"/>
+  <img src="https://picsum.photos/204" class="w-24 h-24 object-cover rounded-lg contrast-100"/>
+  <img src="https://picsum.photos/205" class="w-24 h-24 object-cover rounded-lg contrast-150"/>
+</div>
+</section>
+
+<!-- GRAYSCALE -->
+<section class="bg-white/5 backdrop-blur-lg border border-white/10 p-6 rounded-2xl hover:scale-105 transition">
+<h2 class="text-xl font-bold mb-6 text-indigo-400">Grayscale</h2>
+
+<div class="flex gap-4 justify-center">
+  <img src="https://picsum.photos/206" class="w-24 h-24 object-cover rounded-lg grayscale hover:grayscale-0 transition"/>
+  <img src="https://picsum.photos/207" class="w-24 h-24 object-cover rounded-lg saturate-50"/>
+  <img src="https://picsum.photos/208" class="w-24 h-24 object-cover rounded-lg saturate-150"/>
+</div>
+</section>
+
+<!-- HUE + INVERT -->
+<section class="bg-white/5 backdrop-blur-lg border border-white/10 p-6 rounded-2xl hover:scale-105 transition">
+<h2 class="text-xl font-bold mb-6 text-green-400">Hue & Invert</h2>
+
+<div class="flex gap-4 justify-center">
+  <img src="https://picsum.photos/209" class="w-24 h-24 object-cover rounded-lg hue-rotate-90"/>
+  <img src="https://picsum.photos/210" class="w-24 h-24 object-cover rounded-lg invert"/>
+</div>
+</section>
+
+<!-- SEPIA -->
+<section class="bg-white/5 backdrop-blur-lg border border-white/10 p-6 rounded-2xl hover:scale-105 transition">
+<h2 class="text-xl font-bold mb-6 text-orange-400">Sepia</h2>
+
+<div class="flex gap-4 justify-center">
+  <img src="https://picsum.photos/211" class="w-24 h-24 object-cover rounded-lg sepia"/>
+  <img src="https://picsum.photos/212" class="w-24 h-24 object-cover rounded-lg sepia-0"/>
+</div>
+</section>
+
+<!-- DROP SHADOW -->
+<section class="bg-white/5 backdrop-blur-lg border border-white/10 p-6 rounded-2xl hover:scale-105 transition md:col-span-2 lg:col-span-3">
+<h2 class="text-xl font-bold mb-6 text-red-400">Drop Shadow</h2>
+
+<div class="flex gap-8 justify-center">
+  <img src="https://picsum.photos/213" class="w-28 h-28 object-cover rounded-lg drop-shadow-sm"/>
+  <img src="https://picsum.photos/214" class="w-28 h-28 object-cover rounded-lg drop-shadow"/>
+  <img src="https://picsum.photos/215" class="w-28 h-28 object-cover rounded-lg drop-shadow-2xl"/>
+</div>
+</section>
+
+</div>
+
+<!-- FOOTER -->
+<footer class="text-center text-gray-500 pt-10">
+  Premium UI • Tailwind CSS
+</footer>
+
+</body>
+</html>

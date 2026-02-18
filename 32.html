@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Advanced Responsive Layout</title>
+
+<script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gradient-to-br from-slate-50 via-white to-indigo-50 text-gray-800">
+
+<!-- ================= HERO ================= -->
+<section class="relative px-6 py-20 lg:py-32 bg-gradient-to-r from-indigo-600 via-blue-600 to-purple-600 text-white overflow-hidden">
+
+<div class="max-w-7xl mx-auto text-center lg:text-left">
+
+<h1 class="text-4xl md:text-5xl xl:text-6xl font-extrabold leading-tight">
+Modern Responsive UI
+</h1>
+
+<p class="mt-6 text-lg md:text-xl max-w-2xl mx-auto lg:mx-0 text-white/90">
+A smooth, professional layout built using only Tailwind CSS utilities.
+Clean spacing, gradients, and responsive design.
+</p>
+
+<div class="mt-10 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+
+<button class="px-8 py-4 bg-white text-indigo-600 font-semibold rounded-xl shadow-lg hover:scale-105 hover:shadow-xl transition">
+Get Started
+</button>
+
+<button class="px-8 py-4 bg-white/20 backdrop-blur border border-white/40 rounded-xl hover:bg-white/30 transition">
+Learn More
+</button>
+
+</div>
+
+</div>
+</section>
+
+<!-- ================= LAYOUT ================= -->
+<div class="max-w-7xl mx-auto flex flex-col lg:flex-row gap-10 px-6 py-16">
+
+<!-- ===== SIDEBAR ===== -->
+<aside class="lg:w-72 bg-white rounded-2xl shadow p-6 space-y-6 h-fit">
+
+<h2 class="font-bold text-xl">Dashboard</h2>
+
+<nav class="space-y-3 text-gray-600">
+
+<a class="block px-4 py-3 rounded-xl hover:bg-indigo-50 hover:text-indigo-600 transition">Overview</a>
+<a class="block px-4 py-3 rounded-xl hover:bg-indigo-50 hover:text-indigo-600 transition">Analytics</a>
+<a class="block px-4 py-3 rounded-xl hover:bg-indigo-50 hover:text-indigo-600 transition">Reports</a>
+<a class="block px-4 py-3 rounded-xl hover:bg-indigo-50 hover:text-indigo-600 transition">Settings</a>
+
+</nav>
+
+</aside>
+
+<!-- ===== MAIN ===== -->
+<main class="flex-1 space-y-12">
+
+<!-- IMAGE CARD -->
+<div class="bg-white rounded-2xl shadow overflow-hidden">
+
+<img src="https://picsum.photos/1200/600"
+class="w-full h-56 md:h-80 object-cover hover:scale-105 transition duration-500">
+
+<div class="p-6">
+<h3 class="font-bold text-xl">Responsive Media</h3>
+<p class="text-gray-600 mt-2">
+Images adapt beautifully to every screen size.
+</p>
+</div>
+
+</div>
+
+<!-- ===== TABLE ===== -->
+<div class="bg-white p-6 rounded-2xl shadow">
+
+<h3 class="text-xl font-bold mb-6">Responsive Table</h3>
+
+<div class="overflow-x-auto">
+
+<table class="min-w-full">
+
+<thead class="bg-gray-100">
+<tr>
+<th class="p-4 text-left">Name</th>
+<th class="p-4 text-left">Email</th>
+<th class="p-4 text-left">Role</th>
+</tr>
+</thead>
+
+<tbody class="divide-y">
+
+<tr class="hover:bg-gray-50">
+<td class="p-4">John Doe</td>
+<td class="p-4">john@example.com</td>
+<td class="p-4">
+<span class="px-3 py-1 bg-green-100 text-green-600 rounded-full text-sm">
+Admin
+</span>
+</td>
+</tr>
+
+<tr class="hover:bg-gray-50">
+<td class="p-4">Jane Smith</td>
+<td class="p-4">jane@example.com</td>
+<td class="p-4">
+<span class="px-3 py-1 bg-blue-100 text-blue-600 rounded-full text-sm">
+User
+</span>
+</td>
+</tr>
+
+</tbody>
+</table>
+
+</div>
+</div>
+
+<!-- ===== CSS ONLY MODAL ===== -->
+<details class="group">
+
+<summary class="list-none inline-block cursor-pointer px-8 py-4 bg-indigo-600 text-white rounded-xl shadow hover:scale-105 transition">
+Open Modal
+</summary>
+
+<div class="fixed inset-0 bg-black/40 flex items-end sm:items-center justify-center p-4">
+
+<div class="bg-white max-w-lg w-full rounded-t-2xl sm:rounded-2xl p-8 shadow-2xl space-y-4">
+
+<h3 class="text-2xl font-bold">Responsive Modal</h3>
+
+<p class="text-gray-600">
+Bottom sheet on mobile, centered on desktop. 
+Built with pure Tailwind CSS.
+</p>
+
+<p class="text-sm text-gray-400">
+Click outside or toggle to close.
+</p>
+
+</div>
+</div>
+
+</details>
+
+</main>
+</div>
+
+<!-- ================= FOOTER ================= -->
+<footer class="bg-gray-900 text-gray-400 text-center py-10">
+© 2026 Responsive UI. Built with Tailwind CSS.
+</footer>
+
+</body>
+</html>

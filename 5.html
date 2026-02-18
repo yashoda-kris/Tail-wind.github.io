@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Tailwind Padding Playground</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gradient-to-br from-gray-100 to-gray-200 min-h-screen p-6">
+
+<!-- Header -->
+<header class="text-center mb-10">
+  <h1 class="text-3xl font-bold text-gray-800">Tailwind Padding Playground</h1>
+  <p class="text-gray-500 mt-2">Visual guide to padding utilities</p>
+</header>
+
+<main class="max-w-5xl mx-auto space-y-10">
+
+<!-- PADDING SCALE -->
+<section class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition">
+<h2 class="text-xl font-semibold text-gray-700 mb-6">📦 Padding Scale</h2>
+
+<div class="space-y-4 text-sm">
+
+  <div class="bg-blue-100 rounded">
+    <div class="bg-blue-500 text-white p-0 rounded">p-0 (0rem)</div>
+  </div>
+
+  <div class="bg-blue-100 rounded">
+    <div class="bg-blue-500 text-white p-0.5 rounded">p-0.5 (0.125rem)</div>
+  </div>
+
+  <div class="bg-blue-100 rounded">
+    <div class="bg-blue-500 text-white p-1 rounded">p-1 (0.25rem)</div>
+  </div>
+
+  <div class="bg-blue-100 rounded">
+    <div class="bg-blue-500 text-white p-2 rounded">p-2 (0.5rem)</div>
+  </div>
+
+  <div class="bg-blue-100 rounded">
+    <div class="bg-blue-600 text-white p-4 rounded">p-4 (1rem)</div>
+  </div>
+
+  <div class="bg-blue-100 rounded">
+    <div class="bg-blue-700 text-white p-6 rounded">p-6 (1.5rem)</div>
+  </div>
+
+  <div class="bg-blue-100 rounded">
+    <div class="bg-blue-800 text-white p-8 rounded">p-8 (2rem)</div>
+  </div>
+
+  <div class="bg-blue-100 rounded">
+    <div class="bg-blue-900 text-white p-12 rounded">p-12 (3rem)</div>
+  </div>
+
+</div>
+</section>
+
+<!-- DIRECTIONAL PADDING -->
+<section class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition">
+<h2 class="text-xl font-semibold text-gray-700 mb-6">↔️ Logical Padding (LTR/RTL)</h2>
+
+<div class="space-y-5 text-sm">
+
+  <div class="bg-green-100 rounded">
+    <div class="bg-green-500 text-white ps-6 py-3 rounded">
+      ps-6 → Padding start (left in LTR)
+    </div>
+  </div>
+
+  <div class="bg-green-100 rounded">
+    <div class="bg-green-600 text-white pe-6 py-3 rounded">
+      pe-6 → Padding end (right in LTR)
+    </div>
+  </div>
+
+  <div class="bg-green-100 rounded">
+    <div class="bg-green-700 text-white ps-10 pe-10 py-3 rounded text-center">
+      ps-10 + pe-10 → Horizontal padding
+    </div>
+  </div>
+
+</div>
+</section>
+
+<!-- AXIS PADDING -->
+<section class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition">
+<h2 class="text-xl font-semibold text-gray-700 mb-6">📐 Axis Padding</h2>
+
+<div class="space-y-5 text-sm">
+
+  <div class="bg-purple-100 rounded">
+    <div class="bg-purple-600 text-white px-10 py-3 rounded text-center">
+      px-10 → Horizontal padding
+    </div>
+  </div>
+
+  <div class="bg-purple-100 rounded">
+    <div class="bg-purple-700 text-white py-10 px-3 rounded text-center">
+      py-10 → Vertical padding
+    </div>
+  </div>
+
+</div>
+</section>
+
+</main>
+
+</body>
+</html>

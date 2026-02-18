@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Advanced Background Utilities</title>
+
+<script src="https://cdn.tailwindcss.com"></script>
+
+<style>
+html { scroll-behavior: smooth; }
+</style>
+
+</head>
+
+<body class="bg-gradient-to-br from-slate-900 via-gray-900 to-black text-white min-h-screen p-8">
+
+<!-- HEADER -->
+<header class="text-center mb-14">
+  <h1 class="text-4xl md:text-5xl font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 to-purple-500">
+    Tailwind Background Utilities
+  </h1>
+  <p class="text-gray-400 mt-3">Advanced UI Showcase</p>
+</header>
+
+<!-- GRID CONTAINER -->
+<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+<!-- CARD -->
+<div class="backdrop-blur-xl bg-white/5 border border-white/10 rounded-2xl p-6 hover:scale-105 transition duration-500 shadow-xl">
+<h2 class="font-bold text-lg mb-4 text-cyan-400">Background Size</h2>
+
+<div class="space-y-4">
+<div class="h-28 rounded-xl bg-blue-500 bg-auto flex items-center justify-center">bg-auto</div>
+<div class="h-28 rounded-xl bg-blue-500 bg-cover flex items-center justify-center">bg-cover</div>
+<div class="h-28 rounded-xl bg-blue-500 bg-contain flex items-center justify-center">bg-contain</div>
+</div>
+</div>
+
+<!-- CARD -->
+<div class="backdrop-blur-xl bg-white/5 border border-white/10 rounded-2xl p-6 hover:scale-105 transition duration-500 shadow-xl">
+<h2 class="font-bold text-lg mb-4 text-purple-400">Background Attachment</h2>
+
+<div class="space-y-4">
+<div class="h-28 rounded-xl bg-gradient-to-r from-purple-500 to-indigo-500 bg-fixed flex items-center justify-center">bg-fixed</div>
+<div class="h-28 rounded-xl bg-gradient-to-r from-purple-500 to-indigo-500 bg-local flex items-center justify-center">bg-local</div>
+<div class="h-28 rounded-xl bg-gradient-to-r from-purple-500 to-indigo-500 bg-scroll flex items-center justify-center">bg-scroll</div>
+</div>
+</div>
+
+<!-- CARD -->
+<div class="backdrop-blur-xl bg-white/5 border border-white/10 rounded-2xl p-6 hover:scale-105 transition duration-500 shadow-xl">
+<h2 class="font-bold text-lg mb-4 text-pink-400">Background Position</h2>
+
+<div class="space-y-4">
+<div class="h-28 rounded-xl bg-[url('https://picsum.photos/400')] bg-top bg-cover flex items-center justify-center">Top</div>
+<div class="h-28 rounded-xl bg-[url('https://picsum.photos/401')] bg-center bg-cover flex items-center justify-center">Center</div>
+<div class="h-28 rounded-xl bg-[url('https://picsum.photos/402')] bg-bottom bg-cover flex items-center justify-center">Bottom</div>
+</div>
+</div>
+
+<!-- CARD -->
+<div class="backdrop-blur-xl bg-white/5 border border-white/10 rounded-2xl p-6 hover:scale-105 transition duration-500 shadow-xl">
+<h2 class="font-bold text-lg mb-4 text-green-400">Background Repeat</h2>
+
+<div class="space-y-4">
+<div class="h-28 rounded-xl bg-[url('https://picsum.photos/60')] bg-repeat flex items-center justify-center">Repeat</div>
+<div class="h-28 rounded-xl bg-[url('https://picsum.photos/61')] bg-no-repeat bg-center flex items-center justify-center">No Repeat</div>
+<div class="h-28 rounded-xl bg-[url('https://picsum.photos/62')] bg-repeat-x flex items-center justify-center">Repeat X</div>
+</div>
+</div>
+
+<!-- CARD -->
+<div class="backdrop-blur-xl bg-white/5 border border-white/10 rounded-2xl p-6 hover:scale-105 transition duration-500 shadow-xl">
+<h2 class="font-bold text-lg mb-4 text-yellow-400">Origin & Clip</h2>
+
+<div class="space-y-4">
+<div class="h-28 p-6 rounded-xl bg-gradient-to-r from-red-400 to-pink-500 bg-origin-border flex items-center justify-center">Border</div>
+<div class="h-28 p-6 rounded-xl bg-gradient-to-r from-red-400 to-pink-500 bg-origin-content flex items-center justify-center">Content</div>
+<div class="text-4xl font-extrabold bg-gradient-to-r from-green-400 to-blue-500 bg-clip-text text-transparent text-center">
+Clip Text
+</div>
+</div>
+</div>
+
+<!-- FEATURE HERO CARD -->
+<div class="md:col-span-2 lg:col-span-3 backdrop-blur-xl bg-white/5 border border-white/10 rounded-2xl overflow-hidden hover:scale-[1.02] transition duration-500 shadow-2xl">
+
+<div class="relative h-72 bg-cover bg-center" style="background-image:url('https://picsum.photos/900/500')">
+
+<div class="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent"></div>
+
+<div class="absolute bottom-6 left-6">
+<h2 class="text-3xl font-bold mb-2">Image + Gradient Overlay</h2>
+<p class="text-gray-300">Beautiful readable overlays using gradients</p>
+
+<button class="mt-4 px-6 py-2 bg-cyan-500 rounded-lg hover:bg-cyan-400 transition">
+Explore
+</button>
+</div>
+
+</div>
+</div>
+
+</div>
+
+<!-- FOOTER -->
+<footer class="text-center mt-16 text-gray-500">
+Made with Tailwind CSS • Advanced UI Demo
+</footer>
+
+</body>
+</html>

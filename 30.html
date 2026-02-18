@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Advanced Tailwind Overflow UI</title>
+
+<script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gradient-to-br from-slate-100 via-white to-indigo-100 p-10 space-y-16 min-h-screen">
+
+<!-- HEADER -->
+<h1 class="text-4xl font-extrabold text-center bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent">
+Overflow & Scroll UI
+</h1>
+
+<!-- HORIZONTAL SCROLL CARDS -->
+<section class="max-w-6xl mx-auto bg-white/70 backdrop-blur-xl p-6 rounded-3xl shadow-xl space-y-6">
+
+<h2 class="text-2xl font-bold text-gray-800">Horizontal Scroll</h2>
+
+<div class="flex overflow-x-auto gap-6 pb-4 snap-x snap-mandatory">
+
+<div class="snap-center flex-none w-72 h-40 bg-gradient-to-r from-red-400 to-rose-500 rounded-2xl shadow-lg flex items-center justify-center text-white text-xl font-bold hover:scale-105 transition">
+Card 1
+</div>
+
+<div class="snap-center flex-none w-72 h-40 bg-gradient-to-r from-green-400 to-emerald-500 rounded-2xl shadow-lg flex items-center justify-center text-white text-xl font-bold hover:scale-105 transition">
+Card 2
+</div>
+
+<div class="snap-center flex-none w-72 h-40 bg-gradient-to-r from-blue-400 to-indigo-500 rounded-2xl shadow-lg flex items-center justify-center text-white text-xl font-bold hover:scale-105 transition">
+Card 3
+</div>
+
+<div class="snap-center flex-none w-72 h-40 bg-gradient-to-r from-purple-400 to-pink-500 rounded-2xl shadow-lg flex items-center justify-center text-white text-xl font-bold hover:scale-105 transition">
+Card 4
+</div>
+
+</div>
+</section>
+
+<!-- SCROLLABLE CONTENT BOX -->
+<section class="max-w-4xl mx-auto bg-white/70 backdrop-blur-xl p-6 rounded-3xl shadow-xl space-y-4">
+
+<h2 class="text-2xl font-bold text-gray-800">Scrollable Container</h2>
+
+<div class="h-56 overflow-y-auto rounded-xl border p-4 space-y-3 bg-gradient-to-b from-indigo-100 to-indigo-300">
+
+<p>Line 1</p>
+<p>Line 2</p>
+<p>Line 3</p>
+<p>Line 4</p>
+<p>Line 5</p>
+<p>Line 6</p>
+<p>Line 7</p>
+<p>Line 8</p>
+<p>Line 9</p>
+<p>Line 10</p>
+<p>Line 11</p>
+<p>Line 12</p>
+
+</div>
+</section>
+
+<!-- MODAL (CSS-ONLY USING DETAILS) -->
+<section class="max-w-4xl mx-auto text-center space-y-6">
+
+<h2 class="text-2xl font-bold text-gray-800">Modal (No JS)</h2>
+
+<details class="group">
+
+<summary class="cursor-pointer list-none inline-block px-6 py-3 bg-gradient-to-r from-indigo-500 to-purple-600 text-white font-semibold rounded-xl shadow-lg hover:scale-110 transition">
+Open Modal
+</summary>
+
+<div class="fixed inset-0 bg-black/50 flex items-center justify-center p-6">
+
+<div class="bg-white max-w-lg w-full p-8 rounded-2xl shadow-2xl space-y-4 relative">
+
+<h3 class="text-xl font-bold">Scrollable Modal</h3>
+
+<div class="h-48 overflow-y-auto border rounded-lg p-4 space-y-2">
+<p>Scrollable content...</p>
+<p>Line 1</p>
+<p>Line 2</p>
+<p>Line 3</p>
+<p>Line 4</p>
+<p>Line 5</p>
+<p>Line 6</p>
+<p>Line 7</p>
+<p>Line 8</p>
+</div>
+
+<p class="text-gray-500 text-sm">Click outside or toggle to close</p>
+
+</div>
+</div>
+
+</details>
+</section>
+
+<!-- TRUNCATE + TOOLTIP -->
+<section class="max-w-4xl mx-auto bg-white/70 backdrop-blur-xl p-6 rounded-3xl shadow-xl space-y-4">
+
+<h2 class="text-2xl font-bold text-gray-800">Truncate + Tooltip</h2>
+
+<div class="group relative w-72">
+
+<p class="truncate bg-gray-200 p-3 rounded-lg">
+This is a very long text that will be truncated with ellipsis when it overflows.
+</p>
+
+<div class="absolute left-0 top-full mt-2 hidden group-hover:block bg-gray-800 text-white text-sm p-3 rounded-lg shadow-lg w-max">
+Full text shown in tooltip ✨
+</div>
+
+</div>
+</section>
+
+<!-- FOOTER BUTTON -->
+<div class="text-center">
+
+<button class="px-10 py-4 rounded-full text-white text-lg font-semibold bg-gradient-to-r from-cyan-500 to-blue-600 shadow-xl hover:shadow-2xl hover:scale-110 transition">
+Smooth Experience 🚀
+</button>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Advanced Tailwind Arbitrary Playground</title>
+<script src="https://cdn.tailwindcss.com"></script>
+
+<style>
+:root{
+--primary-color:#ff4d6d;
+--sidebar-width:260px;
+}
+</style>
+</head>
+
+<body class="min-h-screen bg-gradient-to-br from-slate-100 via-white to-slate-200 
+dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 
+dark:text-white p-8 space-y-24 transition-all duration-500">
+
+<!-- HEADER -->
+<header class="text-center space-y-4">
+<h1 class="text-[clamp(2rem,5vw,3.5rem)] font-extrabold 
+bg-gradient-to-r from-pink-500 to-indigo-500 bg-clip-text text-transparent">
+Arbitrary Values Playground
+</h1>
+
+<p class="tracking-[0.15em] uppercase text-gray-500">
+Advanced Tailwind Utilities
+</p>
+</header>
+
+
+<!-- CARD WRAPPER -->
+<div class="grid md:grid-cols-2 gap-10 max-w-6xl mx-auto">
+
+<!-- CUSTOM SIZES -->
+<section class="bg-white/60 dark:bg-gray-800/60 backdrop-blur-xl 
+border border-white/30 shadow-xl rounded-2xl p-8 space-y-6">
+
+<h2 class="text-xl font-semibold">Custom Sizes & Colors</h2>
+
+<div class="w-[32rem] max-w-full h-[120px] 
+bg-[#1da1f2] rounded-xl shadow-lg 
+flex items-center justify-center text-white 
+hover:scale-105 transition">
+w-[32rem] h-[120px]
+</div>
+
+<div class="m-[5%] p-[2.5rem] bg-[#50d71e] rounded-xl 
+hover:rotate-1 transition">
+m-[5%] p-[2.5rem]
+</div>
+
+</section>
+
+
+<!-- GRADIENT -->
+<section class="bg-white/60 dark:bg-gray-800/60 backdrop-blur-xl 
+border shadow-xl rounded-2xl p-8 space-y-6">
+
+<h2 class="text-xl font-semibold">Gradient</h2>
+
+<div class="h-[160px] rounded-xl text-white font-semibold
+flex items-center justify-center
+bg-[linear-gradient(135deg,#ff0000,#0000ff)]
+hover:scale-105 transition">
+Custom Gradient
+</div>
+
+</section>
+
+
+<!-- CSS FUNCTIONS -->
+<section class="bg-white/60 dark:bg-gray-800/60 backdrop-blur-xl 
+border shadow-xl rounded-2xl p-8 space-y-6">
+
+<h2 class="text-xl font-semibold">CSS Functions</h2>
+
+<div class="w-[calc(100%-3rem)] bg-yellow-400 p-4 rounded-xl shadow">
+calc()
+</div>
+
+<div class="h-[clamp(100px,20vh,250px)] 
+bg-pink-500 rounded-xl flex items-center justify-center text-white">
+clamp()
+</div>
+
+</section>
+
+
+<!-- ARBITRARY PROPERTIES -->
+<section class="bg-white/60 dark:bg-gray-800/60 backdrop-blur-xl 
+border shadow-xl rounded-2xl p-8 space-y-6">
+
+<h2 class="text-xl font-semibold">Arbitrary Properties</h2>
+
+<div class="w-40 h-40 bg-red-500 
+[clip-path:polygon(50%_0%,100%_100%,0%_100%)]
+hover:scale-110 transition"></div>
+
+<div class="p-6 bg-white/30 rounded-xl
+[backdrop-filter:blur(20px)_brightness(1.2)]">
+Backdrop Filter
+</div>
+
+<div class="bg-blue-600 text-white p-6 rounded-xl
+[mask-image:linear-gradient(to_right,transparent,black)]">
+Mask Image
+</div>
+
+</section>
+
+
+<!-- IMPORTANT -->
+<section class="bg-white/60 dark:bg-gray-800/60 backdrop-blur-xl 
+border shadow-xl rounded-2xl p-8 space-y-6">
+
+<h2 class="text-xl font-semibold">Important Modifier</h2>
+
+<div class="p-2 !p-10 bg-gray-300 dark:bg-gray-700 rounded-xl">
+!p-10
+</div>
+
+<button class="text-red-500 hover:!text-blue-500 
+transition font-semibold">
+Hover Important
+</button>
+
+<div class="hidden sm:!block bg-green-400 p-4 rounded-xl">
+sm:!block
+</div>
+
+</section>
+
+
+<!-- CSS VARIABLES -->
+<section class="bg-white/60 dark:bg-gray-800/60 backdrop-blur-xl 
+border shadow-xl rounded-2xl p-8 space-y-6">
+
+<h2 class="text-xl font-semibold">CSS Variables</h2>
+
+<div class="bg-[var(--primary-color)] p-6 text-white rounded-xl shadow">
+var(--primary-color)
+</div>
+
+<div class="w-[var(--sidebar-width,250px)] 
+bg-indigo-600 h-20 rounded-xl flex items-center justify-center text-white">
+Sidebar Width
+</div>
+
+</section>
+
+
+<!-- MULTIPLE PROPS -->
+<section class="bg-white/60 dark:bg-gray-800/60 backdrop-blur-xl 
+border shadow-xl rounded-2xl p-8 space-y-6">
+
+<h2 class="text-xl font-semibold">Combined Properties</h2>
+
+<div class="w-40 h-40 bg-orange-500 rounded-xl 
+flex items-center justify-center text-white
+[transform:rotate(45deg)_scale(1.2)]
+hover:[transform:rotate(0deg)_scale(1.1)]
+[filter:brightness(1.2)] transition">
+Combo
+</div>
+
+</section>
+
+</div>
+
+
+<!-- FOOTER -->
+<footer class="text-center pt-10 text-gray-500">
+Premium Tailwind Arbitrary Demo
+</footer>
+
+</body>
+</html>

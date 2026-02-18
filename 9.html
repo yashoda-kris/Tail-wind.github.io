@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Advanced Tailwind Height Utilities</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gradient-to-br from-gray-100 to-gray-200 p-6 md:p-12 space-y-16">
+
+<!-- HEADER -->
+<header class="text-center space-y-3">
+  <h1 class="text-3xl md:text-4xl font-bold">Advanced Height Utilities</h1>
+  <p class="text-gray-600">Professional height control with Tailwind CSS</p>
+</header>
+
+<!-- RESPONSIVE HEIGHTS -->
+<section class="bg-white p-6 rounded-xl shadow-xl space-y-6">
+<h2 class="text-2xl font-bold">Responsive Heights</h2>
+
+<div class="flex gap-6 items-end">
+  <div class="bg-blue-500 w-24 h-24 md:h-40 lg:h-56 text-white flex items-center justify-center rounded transition hover:scale-110">
+    Responsive
+  </div>
+</div>
+</section>
+
+<!-- ARBITRARY HEIGHTS -->
+<section class="bg-white p-6 rounded-xl shadow-xl space-y-6">
+<h2 class="text-2xl font-bold">Arbitrary Heights</h2>
+
+<div class="flex gap-6 items-end">
+  <div class="bg-green-500 w-24 h-[120px] text-white flex items-center justify-center rounded">
+    120px
+  </div>
+
+  <div class="bg-green-600 w-24 h-[30vh] text-white flex items-center justify-center rounded">
+    30vh
+  </div>
+
+  <div class="bg-green-700 w-24 h-[clamp(150px,30vh,300px)] text-white flex items-center justify-center rounded text-center">
+    clamp()
+  </div>
+</div>
+</section>
+
+<!-- VIEWPORT HEIGHTS -->
+<section class="bg-white p-6 rounded-xl shadow-xl space-y-6">
+<h2 class="text-2xl font-bold">Viewport Heights</h2>
+
+<div class="grid md:grid-cols-3 gap-6">
+  <div class="bg-purple-500 h-screen text-white flex items-center justify-center rounded">
+    h-screen
+  </div>
+
+  <div class="bg-purple-600 h-[50vh] text-white flex items-center justify-center rounded">
+    50vh
+  </div>
+
+  <div class="bg-purple-700 h-[100dvh] text-white flex items-center justify-center rounded">
+    100dvh (mobile safe)
+  </div>
+</div>
+</section>
+
+<!-- MIN & MAX HEIGHTS -->
+<section class="bg-white p-6 rounded-xl shadow-xl space-y-6">
+<h2 class="text-2xl font-bold">Min & Max Heights</h2>
+
+<div class="flex gap-6">
+  <div class="bg-red-500 min-h-[200px] w-40 p-4 text-white rounded">
+    min-h
+  </div>
+
+  <div class="bg-red-600 max-h-40 overflow-auto w-40 p-4 text-white rounded">
+    max-h + scroll
+    <p>Extra</p><p>Content</p><p>Here</p><p>To</p><p>Overflow</p>
+  </div>
+</div>
+</section>
+
+<!-- MODERN ASPECT RATIO -->
+<section class="bg-white p-6 rounded-xl shadow-xl space-y-6">
+<h2 class="text-2xl font-bold">Aspect Ratios</h2>
+
+<div class="grid md:grid-cols-3 gap-6">
+  <div class="aspect-square bg-indigo-500 text-white flex items-center justify-center rounded">
+    1:1
+  </div>
+
+  <div class="aspect-video bg-indigo-600 text-white flex items-center justify-center rounded">
+    16:9
+  </div>
+
+  <div class="aspect-[4/3] bg-indigo-700 text-white flex items-center justify-center rounded">
+    4:3
+  </div>
+</div>
+</section>
+
+<!-- HERO SECTION -->
+<section class="h-[60vh] bg-gradient-to-r from-cyan-500 to-blue-600 rounded-xl flex items-center justify-center text-white text-3xl font-bold shadow-xl">
+  Hero Section (60vh)
+</section>
+
+<!-- CARD LAYOUT -->
+<section class="bg-white p-6 rounded-xl shadow-xl space-y-6">
+<h2 class="text-2xl font-bold">Equal Height Cards</h2>
+
+<div class="grid md:grid-cols-3 gap-6">
+  <div class="bg-pink-500 h-64 p-6 text-white rounded hover:scale-105 transition">
+    Card 1
+  </div>
+  <div class="bg-pink-600 h-64 p-6 text-white rounded hover:scale-105 transition">
+    Card 2
+  </div>
+  <div class="bg-pink-700 h-64 p-6 text-white rounded hover:scale-105 transition">
+    Card 3
+  </div>
+</div>
+</section>
+
+<!-- SCROLLABLE PANEL -->
+<section class="bg-white p-6 rounded-xl shadow-xl space-y-4">
+<h2 class="text-2xl font-bold">Scrollable Panel</h2>
+
+<div class="h-64 overflow-y-auto bg-gray-100 p-4 rounded border">
+  <p>Scrollable area</p>
+  <p>Line 1</p><p>Line 2</p><p>Line 3</p>
+  <p>Line 4</p><p>Line 5</p><p>Line 6</p>
+  <p>Line 7</p><p>Line 8</p><p>Line 9</p>
+  <p>Line 10</p><p>Line 11</p><p>Line 12</p>
+</div>
+</section>
+
+</body>
+</html>

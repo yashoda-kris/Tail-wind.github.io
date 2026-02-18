@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+  <meta charset="UTF-8">
+  <title>Advanced Tailwind Space & Divide</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <script>
+    tailwind.config = {
+      darkMode: "class"
+    }
+  </script>
+</head>
+
+<body class="bg-gradient-to-br from-gray-100 to-gray-200 dark:from-gray-900 dark:to-gray-800 p-6 md:p-12 space-y-14 text-gray-800 dark:text-gray-200">
+
+<!-- HEADER -->
+<header class="text-center space-y-3">
+  <h1 class="text-3xl md:text-4xl font-bold">Advanced Space & Divide Utilities</h1>
+  <p class="text-gray-500">Modern layout techniques with Tailwind CSS</p>
+</header>
+
+<!-- RESPONSIVE SPACE -->
+<section class="bg-white dark:bg-gray-900 p-6 rounded-xl shadow-xl space-y-6">
+  <h2 class="text-2xl font-bold">Responsive Space</h2>
+
+  <div class="flex flex-wrap sm:space-x-4 md:space-x-8 space-y-4 sm:space-y-0 bg-gray-100 dark:bg-gray-800 p-6 rounded-lg">
+    <div class="bg-blue-500 hover:scale-110 transition text-white px-4 py-2 rounded">A</div>
+    <div class="bg-blue-600 hover:scale-110 transition text-white px-4 py-2 rounded">B</div>
+    <div class="bg-blue-700 hover:scale-110 transition text-white px-4 py-2 rounded">C</div>
+  </div>
+</section>
+
+<!-- ARBITRARY SPACE VALUES -->
+<section class="bg-white dark:bg-gray-900 p-6 rounded-xl shadow-xl space-y-6">
+  <h2 class="text-2xl font-bold">Arbitrary Space Values</h2>
+
+  <div class="flex space-x-[30px] bg-gray-100 dark:bg-gray-800 p-6 rounded-lg">
+    <div class="bg-green-500 px-4 py-2 text-white rounded">30px</div>
+    <div class="bg-green-600 px-4 py-2 text-white rounded">30px</div>
+    <div class="bg-green-700 px-4 py-2 text-white rounded">30px</div>
+  </div>
+</section>
+
+<!-- REVERSE + RTL READY -->
+<section class="bg-white dark:bg-gray-900 p-6 rounded-xl shadow-xl space-y-6">
+  <h2 class="text-2xl font-bold">Reverse Direction</h2>
+
+  <div class="flex flex-row-reverse space-x-6 space-x-reverse bg-gray-100 dark:bg-gray-800 p-6 rounded-lg">
+    <div class="bg-purple-500 px-4 py-2 text-white rounded">1</div>
+    <div class="bg-purple-600 px-4 py-2 text-white rounded">2</div>
+    <div class="bg-purple-700 px-4 py-2 text-white rounded">3</div>
+  </div>
+</section>
+
+<!-- NEGATIVE SPACE AVATARS -->
+<section class="bg-white dark:bg-gray-900 p-6 rounded-xl shadow-xl space-y-6">
+  <h2 class="text-2xl font-bold">Avatar Stack</h2>
+
+  <div class="flex -space-x-5">
+    <img class="w-14 h-14 rounded-full border-4 border-white hover:scale-110 transition"
+      src="https://randomuser.me/api/portraits/men/1.jpg">
+    <img class="w-14 h-14 rounded-full border-4 border-white hover:scale-110 transition"
+      src="https://randomuser.me/api/portraits/women/2.jpg">
+    <img class="w-14 h-14 rounded-full border-4 border-white hover:scale-110 transition"
+      src="https://randomuser.me/api/portraits/men/3.jpg">
+  </div>
+</section>
+
+<!-- DIVIDE STYLES -->
+<section class="bg-white dark:bg-gray-900 p-6 rounded-xl shadow-xl space-y-8">
+  <h2 class="text-2xl font-bold">Divide Styles</h2>
+
+  <!-- Solid -->
+  <div class="divide-y divide-gray-300 bg-gray-50 dark:bg-gray-800 rounded-lg">
+    <div class="p-4">Solid Divide</div>
+    <div class="p-4">Clean UI separation</div>
+    <div class="p-4">Common in dashboards</div>
+  </div>
+
+  <!-- Dashed -->
+  <div class="divide-y-2 divide-dashed divide-indigo-400 bg-gray-50 dark:bg-gray-800 rounded-lg">
+    <div class="p-4">Dashed Divide</div>
+    <div class="p-4">Stylish lists</div>
+    <div class="p-4">Modern feel</div>
+  </div>
+
+  <!-- Horizontal colored -->
+  <div class="flex divide-x-4 divide-pink-400 bg-gray-50 dark:bg-gray-800 rounded-lg">
+    <div class="p-6">Column 1</div>
+    <div class="p-6">Column 2</div>
+    <div class="p-6">Column 3</div>
+  </div>
+</section>
+
+<!-- REAL UI EXAMPLE -->
+<section class="bg-white dark:bg-gray-900 p-6 rounded-xl shadow-xl space-y-6">
+  <h2 class="text-2xl font-bold">Menu UI Example</h2>
+
+  <div class="divide-y divide-gray-200 dark:divide-gray-700">
+    <div class="p-4 hover:bg-gray-100 dark:hover:bg-gray-800 cursor-pointer">Profile</div>
+    <div class="p-4 hover:bg-gray-100 dark:hover:bg-gray-800 cursor-pointer">Settings</div>
+    <div class="p-4 hover:bg-gray-100 dark:hover:bg-gray-800 cursor-pointer">Logout</div>
+  </div>
+</section>
+
+</body>
+</html>

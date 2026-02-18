@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tailwind Pseudo Elements Pro</title>
+
+<script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="min-h-screen bg-gradient-to-br from-slate-50 via-white to-indigo-50 text-gray-800 p-6 md:p-12 space-y-16">
+
+<!-- ================= HEADER ================= -->
+<header class="text-center space-y-3">
+<h1 class="text-3xl md:text-4xl font-bold tracking-tight">
+Content & Pseudo Elements
+</h1>
+<p class="text-gray-600 max-w-xl mx-auto">
+Advanced, clean UI using only Tailwind CSS pseudo-element utilities.
+</p>
+</header>
+
+
+<!-- ================= REQUIRED FIELD ================= -->
+<section class="bg-white/90 backdrop-blur border shadow-sm rounded-2xl p-8 max-w-md mx-auto space-y-5">
+
+<h2 class="text-xl font-semibold">Required Field</h2>
+
+<label class="block font-medium text-sm
+after:content-['*'] after:ml-1.5 after:text-red-500">
+Email Address
+</label>
+
+<input
+type="email"
+placeholder="you@example.com"
+class="w-full border border-gray-200 rounded-xl px-4 py-3
+focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500
+outline-none transition"
+/>
+
+</section>
+
+
+<!-- ================= DIVIDER ================= -->
+<section class="max-w-xl mx-auto">
+
+<h2 class="relative text-center text-lg font-semibold text-gray-700
+before:absolute before:content-[''] before:left-0 before:top-1/2
+before:w-full before:h-px before:bg-gradient-to-r
+before:from-transparent before:via-gray-300 before:to-transparent">
+
+<span class="bg-gradient-to-br from-slate-50 to-indigo-50 px-6">
+OR CONTINUE
+</span>
+
+</h2>
+
+</section>
+
+
+<!-- ================= QUOTE ================= -->
+<section class="bg-white border shadow-sm rounded-2xl p-10 max-w-2xl mx-auto">
+
+<blockquote class="relative text-lg leading-relaxed text-gray-600
+before:content-['“'] after:content-['”']
+before:absolute before:-left-4 before:-top-6
+after:absolute after:-right-4 after:-bottom-10
+before:text-6xl after:text-6xl
+before:text-indigo-200 after:text-indigo-200">
+
+Tailwind CSS enables developers to build elegant,
+responsive interfaces faster than ever with a
+consistent design system.
+
+</blockquote>
+
+</section>
+
+
+<!-- ================= CUSTOM BULLETS ================= -->
+<section class="bg-white border shadow-sm rounded-2xl p-8 max-w-md mx-auto space-y-4">
+
+<h2 class="text-xl font-semibold">Features</h2>
+
+<ul class="space-y-3 text-gray-600">
+
+<li class="pl-6 relative
+before:content-['▸'] before:absolute before:left-0
+before:text-indigo-500 before:font-bold">
+Utility-first workflow
+</li>
+
+<li class="pl-6 relative
+before:content-['▸'] before:absolute before:left-0
+before:text-indigo-500 before:font-bold">
+Rapid UI development
+</li>
+
+<li class="pl-6 relative
+before:content-['▸'] before:absolute before:left-0
+before:text-indigo-500 before:font-bold">
+Consistent design system
+</li>
+
+</ul>
+
+</section>
+
+
+<!-- ================= BREADCRUMB ================= -->
+<section class="bg-white border shadow-sm rounded-2xl p-8 max-w-md mx-auto space-y-4">
+
+<h2 class="text-xl font-semibold">Breadcrumb</h2>
+
+<nav class="flex items-center text-sm font-medium">
+
+<a href="#" class="text-indigo-600 hover:underline">
+Home
+</a>
+
+<span class="mx-2 text-gray-400
+after:content-['/']"></span>
+
+<a href="#" class="text-indigo-600 hover:underline">
+Products
+</a>
+
+<span class="mx-2 text-gray-400
+after:content-['/']"></span>
+
+<span class="text-gray-700 font-semibold">
+Current
+</span>
+
+</nav>
+
+</section>
+
+
+<!-- ================= DECORATIVE CARD ================= -->
+<section class="max-w-md mx-auto">
+
+<div class="relative bg-white border shadow-sm rounded-2xl p-8">
+
+<div class="absolute -top-5 -left-5 w-14 h-14
+bg-indigo-500 rounded-full opacity-20"></div>
+
+<div class="absolute -bottom-5 -right-5 w-14 h-14
+bg-purple-500 rounded-full opacity-20"></div>
+
+<h2 class="text-xl font-semibold mb-3">
+Decorative Shape
+</h2>
+
+<p class="text-gray-600 leading-relaxed">
+This card uses pseudo-element styled shapes to
+create a modern floating design accent — all
+with Tailwind utilities.
+</p>
+
+</div>
+
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+<footer class="text-center text-gray-500 text-sm pt-10">
+Built with Tailwind CSS • Smooth UI Demo
+</footer>
+
+</body>
+</html>

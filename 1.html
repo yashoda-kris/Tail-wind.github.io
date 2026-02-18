@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Tailwind Display Utilities Demo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gradient-to-br from-gray-100 to-gray-200 min-h-screen p-6">
+
+  <!-- Page Title -->
+  <header class="text-center mb-10">
+    <h1 class="text-3xl font-bold text-gray-800">
+      Container & Display
+    </h1>
+    <p class="text-gray-500 mt-2">
+      Simple visual guide for Tailwind display classes
+    </p>
+  </header>
+
+  <main class="max-w-5xl mx-auto space-y-8">
+
+    <!-- Responsive Container -->
+    <section class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition">
+      <h2 class="text-xl font-semibold mb-3 text-gray-700">
+        📦 Responsive Container
+      </h2>
+
+      <div class="container mx-auto px-4 sm:px-6 lg:px-12 bg-blue-50 p-5 rounded-lg border">
+        <p class="text-gray-600">
+          Resize the screen to see padding change at 
+          <span class="font-semibold">sm</span> and 
+          <span class="font-semibold">lg</span> breakpoints.
+        </p>
+      </div>
+      
+    </section>
+
+    <!-- Display Utilities -->
+    <section class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition">
+      <h2 class="text-xl font-semibold mb-5 text-gray-700">
+        🎯 Display Utilities
+      </h2>
+
+      <div class="space-y-4 text-gray-700">
+
+        <div class="block bg-blue-100 p-3 rounded">
+          <span class="font-semibold">block</span>
+        </div>
+
+        <div class="inline-block bg-green-100 p-3 rounded">
+          <span class="font-semibold">inline-block</span>
+        </div>
+
+        <div class="inline bg-yellow-200 px-2 rounded">
+          <span class="font-semibold">inline</span>
+        </div>
+
+        <div class="flex bg-purple-100 p-3 gap-3 rounded">
+          <span class="font-semibold">flex</span>
+          <span>Item 2</span>
+        </div>
+
+        <div class="inline-flex bg-pink-100 p-3 gap-3 rounded">
+          <span class="font-semibold">inline-flex</span>
+          <span>Item 2</span>
+        </div>
+
+        <div class="table bg-gray-200 p-3 rounded">
+          <div class="table-cell border p-2">Table Cell 1</div>
+          <div class="table-cell border p-2">Table Cell 2</div>
+        </div>
+
+        <div class="grid grid-cols-2 gap-3 bg-indigo-100 p-3 rounded">
+          <div class="bg-white p-3 rounded shadow-sm">Grid 1</div>
+          <div class="bg-white p-3 rounded shadow-sm">Grid 2</div>
+        </div>
+
+        <div class="inline-grid grid-cols-2 gap-3 bg-red-100 p-3 rounded">
+          <div class="bg-white p-3 rounded shadow-sm">Inline Grid 1</div>
+          <div class="bg-white p-3 rounded shadow-sm">Inline Grid 2</div>
+        </div>
+
+        <div class="contents">
+          <div class="bg-teal-100 p-3 rounded">
+            <span class="font-semibold">contents</span> (parent removed)
+          </div>
+        </div>
+
+        <div class="hidden bg-black text-white p-3 rounded">
+          hidden (you can't see this)
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Responsive Display -->
+    <section class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition">
+      <h2 class="text-xl font-semibold mb-5 text-gray-700">
+        📱 Responsive Display
+      </h2>
+
+      <div class="space-y-4">
+
+        <div class="hidden md:block bg-green-200 p-4 rounded text-center font-medium">
+          Hidden on mobile → Visible on md+
+        </div>
+
+        <div class="block lg:hidden bg-blue-200 p-4 rounded text-center font-medium">
+          Visible on small/medium → Hidden on lg+
+        </div>
+
+        <p class="text-gray-500 text-center">
+          Resize the browser window to test breakpoints.
+        </p>
+
+      </div>
+    </section>
+
+  </main>
+
+</body>
+</html>

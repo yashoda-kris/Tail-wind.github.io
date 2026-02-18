@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Advanced Tailwind Border Colors</title>
+<script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="min-h-screen bg-gradient-to-br from-slate-900 via-gray-900 to-black text-white p-8">
+
+<!-- HEADER -->
+<header class="text-center mb-12">
+  <h1 class="text-4xl md:text-5xl font-extrabold bg-gradient-to-r from-cyan-400 to-purple-500 text-transparent bg-clip-text">
+    Tailwind Border Colors
+  </h1>
+  <p class="text-gray-400 mt-3">Advanced Border Color Showcase</p>
+</header>
+
+<!-- GRID -->
+<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+<!-- CARD -->
+<div class="bg-white/5 backdrop-blur-lg p-6 rounded-2xl border border-white/10 shadow-xl hover:scale-105 transition">
+
+<h2 class="text-xl font-bold mb-4 text-cyan-400">Gray Scale</h2>
+
+<div class="space-y-3 text-black">
+  <div class="border border-gray-200 bg-white p-3 rounded-lg">border-gray-200</div>
+  <div class="border border-gray-400 bg-white p-3 rounded-lg">border-gray-400</div>
+  <div class="border border-gray-600 bg-white p-3 rounded-lg">border-gray-600</div>
+  <div class="border border-gray-800 bg-white p-3 rounded-lg">border-gray-800</div>
+</div>
+
+</div>
+
+<!-- CARD -->
+<div class="bg-white/5 backdrop-blur-lg p-6 rounded-2xl border border-white/10 shadow-xl hover:scale-105 transition">
+
+<h2 class="text-xl font-bold mb-4 text-purple-400">Directional</h2>
+
+<div class="space-y-3 text-black">
+  <div class="border-t-4 border-blue-500 bg-white p-3 rounded-lg">Top Border</div>
+  <div class="border-r-4 border-red-500 bg-white p-3 rounded-lg">Right Border</div>
+  <div class="border-b-4 border-green-500 bg-white p-3 rounded-lg">Bottom Border</div>
+  <div class="border-l-4 border-yellow-500 bg-white p-3 rounded-lg">Left Border</div>
+</div>
+
+</div>
+
+<!-- CARD -->
+<div class="bg-white/5 backdrop-blur-lg p-6 rounded-2xl border border-white/10 shadow-xl hover:scale-105 transition">
+
+<h2 class="text-xl font-bold mb-4 text-pink-400">X & Y Axis</h2>
+
+<div class="space-y-3 text-black">
+  <div class="border-x-4 border-purple-500 bg-white p-3 rounded-lg">border-x</div>
+  <div class="border-y-4 border-pink-500 bg-white p-3 rounded-lg">border-y</div>
+</div>
+
+</div>
+
+<!-- CARD -->
+<div class="bg-white/5 backdrop-blur-lg p-6 rounded-2xl border border-white/10 shadow-xl hover:scale-105 transition md:col-span-2 lg:col-span-3">
+
+<h2 class="text-xl font-bold mb-6 text-yellow-400">Opacity & Custom</h2>
+
+<div class="grid md:grid-cols-3 gap-6 text-black">
+
+  <div class="border-4 border-blue-500/25 bg-white p-4 rounded-lg text-center">
+    border-blue/25
+  </div>
+
+  <div class="border-4 border-red-500/50 bg-white p-4 rounded-lg text-center">
+    border-red/50
+  </div>
+
+  <div class="border-4 border-green-500/75 bg-white p-4 rounded-lg text-center">
+    border-green/75
+  </div>
+
+  <div class="border-4 border-[#1da1f2] bg-white p-4 rounded-lg text-center">
+    #1da1f2
+  </div>
+
+  <div class="border-4 border-[rgb(255,100,50)] bg-white p-4 rounded-lg text-center">
+    rgb()
+  </div>
+
+  <div class="border-4 border-[hsl(200,80%,50%)] bg-white p-4 rounded-lg text-center">
+    hsl()
+  </div>
+
+</div>
+</div>
+
+</div>
+
+<!-- FOOTER -->
+<footer class="text-center text-gray-500 mt-14">
+  Premium UI • Built with Tailwind CSS
+</footer>
+
+</body>
+</html>
